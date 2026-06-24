@@ -1,0 +1,25 @@
+run_name,model,samples,metric,label,value
+qwen2_5vl_7b,qwen2.5vl:7b,50,original_yes_rate,Original YES Rate,1.0
+qwen2_5vl_7b,qwen2.5vl:7b,50,crop_yes_rate,Crop YES Rate,0.96
+qwen2_5vl_7b,qwen2.5vl:7b,50,masked_yes_rate,Masked YES Rate,0.84
+qwen2_5vl_7b,qwen2.5vl:7b,50,ghost_object_rate,Ghost Object Rate,0.84
+qwen2_5vl_7b,qwen2.5vl:7b,50,context_persistence_index,Context Persistence Index,0.84
+qwen2_5vl_7b,qwen2.5vl:7b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.16
+qwen2_5vl_7b,qwen2.5vl:7b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.84
+qwen2_5vl_7b,qwen2.5vl:7b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
+qwen2_5vl_3b,qwen2.5vl:3b,50,original_yes_rate,Original YES Rate,0.92
+qwen2_5vl_3b,qwen2.5vl:3b,50,crop_yes_rate,Crop YES Rate,0.86
+qwen2_5vl_3b,qwen2.5vl:3b,50,masked_yes_rate,Masked YES Rate,0.74
+qwen2_5vl_3b,qwen2.5vl:3b,50,ghost_object_rate,Ghost Object Rate,0.782608695652174
+qwen2_5vl_3b,qwen2.5vl:3b,50,context_persistence_index,Context Persistence Index,0.8043478260869564
+qwen2_5vl_3b,qwen2.5vl:3b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.14
+qwen2_5vl_3b,qwen2.5vl:3b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.78
+qwen2_5vl_3b,qwen2.5vl:3b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
+llava_7b,llava:7b,50,original_yes_rate,Original YES Rate,0.52
+llava_7b,llava:7b,50,crop_yes_rate,Crop YES Rate,0.74
+llava_7b,llava:7b,50,masked_yes_rate,Masked YES Rate,0.32
+llava_7b,llava:7b,50,ghost_object_rate,Ghost Object Rate,0.6153846153846154
+llava_7b,llava:7b,50,context_persistence_index,Context Persistence Index,0.6153846153846154
+llava_7b,llava:7b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.18
+llava_7b,llava:7b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.34
+llava_7b,llava:7b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0

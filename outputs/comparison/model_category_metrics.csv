@@ -1,0 +1,241 @@
+metric,label,value,n,category_name,run_name,model
+original_yes_rate,Original YES Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,baseball bat,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,fork,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,0.6,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.6,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.6,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.6,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,handbag,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.8,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.8,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.8,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,keyboard,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.6,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.6,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.6,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,laptop,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.8,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.8,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.8,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,skateboard,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,surfboard,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.8,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.8,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.8,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tennis racket,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,0.8,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,0.8,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,0.8,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tie,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+crop_yes_rate,Crop YES Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+masked_yes_rate,Masked YES Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+context_persistence_index,Context Persistence Index,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,wine glass,qwen2_5vl_7b,qwen2.5vl:7b
+original_yes_rate,Original YES Rate,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,0.8,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,baseball bat,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,0.8,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,fork,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,0.4,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,0.6,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.0,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.0,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.0,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.2,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,0.0,5,handbag,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,1.0,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.8,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.8,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.8,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,keyboard,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,0.8,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.6,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.6,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.6,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,laptop,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,1.0,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.6,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.6,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.6,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,skateboard,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,0.8,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,0.6,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,1.0,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,1.0,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,1.25,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,surfboard,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,1.0,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.6,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.6,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.6,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tennis racket,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,1.0,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,0.8,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,0.8,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,0.8,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tie,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+crop_yes_rate,Crop YES Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+masked_yes_rate,Masked YES Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+ghost_object_rate,Ghost Object Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+context_persistence_index,Context Persistence Index,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,wine glass,qwen2_5vl_3b,qwen2.5vl:3b
+original_yes_rate,Original YES Rate,0.4,5,baseball bat,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,0.4,5,baseball bat,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.2,5,baseball bat,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.5,5,baseball bat,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.5,5,baseball bat,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,baseball bat,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.4,5,baseball bat,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,baseball bat,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.0,5,fork,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,0.6,5,fork,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.0,5,fork,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.0,5,fork,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.0,5,fork,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,fork,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.0,5,fork,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,0.0,5,fork,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.0,5,handbag,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,0.0,5,handbag,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.0,5,handbag,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.0,5,handbag,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.0,5,handbag,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,handbag,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.0,5,handbag,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,0.0,5,handbag,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.8,5,keyboard,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,1.0,5,keyboard,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.4,5,keyboard,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.5,5,keyboard,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.5,5,keyboard,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,keyboard,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.4,5,keyboard,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,keyboard,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.6,5,laptop,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,1.0,5,laptop,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.4,5,laptop,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.6666666666666666,5,laptop,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.6666666666666667,5,laptop,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,laptop,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.4,5,laptop,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,laptop,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,1.0,5,skateboard,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,0.8,5,skateboard,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.6,5,skateboard,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.6,5,skateboard,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.6,5,skateboard,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,skateboard,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,skateboard,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,skateboard,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.8,5,surfboard,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,0.6,5,surfboard,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.8,5,surfboard,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,surfboard,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,1.0,5,surfboard,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,surfboard,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,surfboard,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,surfboard,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.8,5,tennis racket,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,1.0,5,tennis racket,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.2,5,tennis racket,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.25,5,tennis racket,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.25,5,tennis racket,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.6,5,tennis racket,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.2,5,tennis racket,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tennis racket,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.4,5,tie,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,1.0,5,tie,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.4,5,tie,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,1.0,5,tie,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,1.0,5,tie,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,tie,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.4,5,tie,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tie,llava_7b,llava:7b
+original_yes_rate,Original YES Rate,0.4,5,wine glass,llava_7b,llava:7b
+crop_yes_rate,Crop YES Rate,1.0,5,wine glass,llava_7b,llava:7b
+masked_yes_rate,Masked YES Rate,0.2,5,wine glass,llava_7b,llava:7b
+ghost_object_rate,Ghost Object Rate,0.5,5,wine glass,llava_7b,llava:7b
+context_persistence_index,Context Persistence Index,0.5,5,wine glass,llava_7b,llava:7b
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,wine glass,llava_7b,llava:7b
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.2,5,wine glass,llava_7b,llava:7b
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,wine glass,llava_7b,llava:7b

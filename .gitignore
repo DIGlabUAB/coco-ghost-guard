@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.docx
+
+data/raw/
+data/coco_annotations/
+data/selected/images/
+
+outputs/.cache/
+outputs/.mplconfig/
+outputs/counterfactuals/
+outputs/results/
+outputs/figures/
+outputs/reports/

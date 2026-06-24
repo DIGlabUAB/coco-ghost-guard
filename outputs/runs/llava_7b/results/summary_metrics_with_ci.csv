@@ -1,0 +1,9 @@
+metric,label,value,n,ci_low,ci_high
+original_yes_rate,Original YES Rate,0.52,50,0.38,0.66
+crop_yes_rate,Crop YES Rate,0.74,50,0.62,0.86
+masked_yes_rate,Masked YES Rate,0.32,50,0.2,0.46
+ghost_object_rate,Ghost Object Rate,0.6153846153846154,50,0.4210101867572156,0.7931288032454361
+context_persistence_index,Context Persistence Index,0.6153846153846154,50,0.4210101867572156,0.7931288032454362
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.18,50,0.08,0.28
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.34,50,0.22,0.48
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,50,1.0,1.0

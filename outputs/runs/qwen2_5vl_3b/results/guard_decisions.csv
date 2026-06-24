@@ -1,0 +1,51 @@
+sample_id,category_name,original_answer,crop_answer,masked_answer,ghost_flag,evidence_supported,final_answer,risk,guard_accept,guard_abstain
+tennis_racket_444142_654834,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_369323_656095,tennis racket,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+tennis_racket_203864_657072,tennis racket,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+tennis_racket_44877_656268,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_522889_657613,tennis racket,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+baseball_bat_57232_1476315,baseball bat,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+baseball_bat_158227_629940,baseball bat,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+baseball_bat_284743_627441,baseball bat,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+baseball_bat_264968_631256,baseball bat,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+baseball_bat_254516_628997,baseball bat,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+skateboard_125472_639877,skateboard,YES,YES,UNSURE,False,True,UNSURE,ambiguous,False,True
+skateboard_562229_639293,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+skateboard_279278_640440,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_489924_639066,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+skateboard_300842_643418,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+surfboard_127517_1481509,surfboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+surfboard_381360_647841,surfboard,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+surfboard_498807_651602,surfboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+surfboard_355677_650223,surfboard,NO,NO,YES,False,False,NO,none,False,False
+surfboard_199442_652517,surfboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+fork_75393_1520571,fork,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+fork_322959_690753,fork,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+fork_173371_690999,fork,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+fork_17714_689203,fork,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+fork_533958_688805,fork,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_2157_1500881,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_385029_661859,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_116208_664090,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_355325_1496798,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_25394_661323,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+laptop_89648_1098172,laptop,YES,YES,NO,False,True,YES,low,True,False
+laptop_497599_1100722,laptop,YES,NO,UNSURE,False,False,UNSURE,weak_visual_evidence,False,True
+laptop_134112_1097652,laptop,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+laptop_435003_1100109,laptop,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+laptop_80949_1098811,laptop,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_181499_1116028,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_225757_1114694,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_246308_1115126,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_371677_1115356,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_189820_1975515,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+handbag_554002_1175897,handbag,YES,YES,UNSURE,False,True,UNSURE,ambiguous,False,True
+handbag_115245_1837158,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_414510_1172995,handbag,NO,YES,NO,False,True,NO,none,False,False
+handbag_474293_1430604,handbag,NO,UNSURE,NO,False,False,NO,none,False,False
+handbag_190923_1173865,handbag,YES,YES,NO,False,True,YES,low,True,False
+tie_8532_295311,tie,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+tie_287527_294950,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_450075_293642,tie,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+tie_151657_295651,tie,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+tie_20333_295083,tie,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True

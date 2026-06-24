@@ -1,0 +1,4 @@
+run_name,model,samples,original_only_accept_rate,original_only_ghost_accept_rate,crop_gate_accept_rate,crop_gate_ghost_accept_rate,ghost_guard_accept_rate,ghost_guard_ghost_accept_rate,ghost_guard_abstention_rate
+qwen2_5vl_7b,qwen2.5vl:7b,50,1.0,0.84,0.96,0.8333333333333334,0.16,0.0,0.84
+qwen2_5vl_3b,qwen2.5vl:3b,50,0.92,0.782608695652174,0.84,0.7857142857142857,0.14,0.0,0.78
+llava_7b,llava:7b,50,0.52,0.6153846153846154,0.44,0.5909090909090909,0.18,0.0,0.34

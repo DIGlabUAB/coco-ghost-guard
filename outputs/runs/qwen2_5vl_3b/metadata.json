@@ -1,0 +1,22 @@
+{
+  "run_name": "qwen2_5vl_3b",
+  "created_at_utc": "2026-06-24T12:17:57.633746+00:00",
+  "config_path": "config/expanded_qwen2_5vl_3b.yaml",
+  "model": "qwen2.5vl:3b",
+  "split": "val2017",
+  "max_images_per_category": 5,
+  "categories": [
+    "tennis racket",
+    "baseball bat",
+    "skateboard",
+    "surfboard",
+    "fork",
+    "wine glass",
+    "laptop",
+    "keyboard",
+    "handbag",
+    "tie"
+  ],
+  "samples": 50,
+  "view_answers": 150
+}

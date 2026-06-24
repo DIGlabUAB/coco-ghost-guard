@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COCO-Ghost + GHOST-Guard</title>
+    <meta name="description" content="Counterfactual evidence gating for context-induced object hallucination in local vision-language models.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="brand" href="#">COCO-Ghost</a>
+        <div class="links">
+          <a href="https://github.com/DIGlabUAB/coco-ghost-guard">GitHub</a>
+          <a href="#results">Results</a>
+          <a href="#method">Method</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <section class="hero-copy">
+          <p class="eyebrow">Local VLM reliability · COCO counterfactuals · black-box abstention</p>
+          <h1>Does an object claim survive after the object is visually removed?</h1>
+          <p class="lead">
+            COCO-Ghost creates object-removed counterfactual images from COCO masks. GHOST-Guard accepts an object-presence claim only when the claim is supported by the original image, localized crop, and disappears after masking.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="https://github.com/DIGlabUAB/coco-ghost-guard">View Repository</a>
+            <a class="button" href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Read Results</a>
+          </div>
+        </section>
+        <section class="metric-panel" aria-label="Key experiment results">
+          <div>
+            <span class="metric">450</span>
+            <span class="label">local VLM calls</span>
+          </div>
+          <div>
+            <span class="metric">3</span>
+            <span class="label">Ollama VLMs</span>
+          </div>
+          <div>
+            <span class="metric">84.0%</span>
+            <span class="label">ghost rate on Qwen2.5-VL 7B</span>
+          </div>
+          <div>
+            <span class="metric">0.0%</span>
+            <span class="label">accepted ghost claims after GHOST-Guard</span>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section id="results" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Expanded local experiment</p>
+          <h2>Three local VLMs, same 50 counterfactual object-removal cases</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Original YES</th>
+                <th>Masked YES</th>
+                <th>Ghost Rate</th>
+                <th>Guard Accept</th>
+                <th>Guard Abstain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>qwen2.5vl:7b</td>
+                <td>100.0%</td>
+                <td>84.0%</td>
+                <td>84.0%</td>
+                <td>16.0%</td>
+                <td>84.0%</td>
+              </tr>
+              <tr>
+                <td>qwen2.5vl:3b</td>
+                <td>92.0%</td>
+                <td>74.0%</td>
+                <td>78.3%</td>
+                <td>14.0%</td>
+                <td>78.0%</td>
+              </tr>
+              <tr>
+                <td>llava:7b</td>
+                <td>52.0%</td>
+                <td>32.0%</td>
+                <td>61.5%</td>
+                <td>18.0%</td>
+                <td>34.0%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="figure">
+          <img src="assets/model_metric_comparison.png" alt="Bar chart comparing COCO-Ghost metrics across llava 7b, qwen2.5vl 3b, and qwen2.5vl 7b.">
+        </figure>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Safety wrapper behavior</p>
+          <h2>Crop evidence alone is not enough</h2>
+          <p>
+            A crop-only gate confirms that the object can be recognized locally, but it does not test whether the claim disappears after removal. In the expanded runs, crop-gating still accepted most ghost claims. GHOST-Guard adds the masked counterfactual check and abstains when object belief persists.
+          </p>
+        </div>
+        <div class="callout">
+          <p class="callout-title">Baseline finding</p>
+          <p>For qwen2.5vl:7b, crop-gating accepted 83.3% ghost claims. GHOST-Guard accepted 0.0% by converting those cases to UNSURE.</p>
+        </div>
+      </section>
+
+      <section id="method" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Method</p>
+          <h2>Evidence survival under object removal</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Select COCO instances</h3>
+            <p>Sample target object categories with usable segmentation masks and moderate object area.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Create three views</h3>
+            <p>Save original, object crop, and masked image with the target object region replaced by blurred local pixels.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Query local VLMs</h3>
+            <p>Ask the same strict object-presence question through Ollama and preserve all raw responses.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Apply GHOST-Guard</h3>
+            <p>Accept only original YES, crop YES, masked NO. Otherwise downgrade suspicious claims to UNSURE.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Qualitative examples</p>
+          <h2>Object claims can persist after visual evidence removal</h2>
+        </div>
+        <figure class="figure tall">
+          <img src="assets/example_contact_sheet.png" alt="Contact sheet showing original, crop, and masked counterfactual examples with VLM answers.">
+        </figure>
+        <p class="note">
+          Some masked regions leave object-shaped blur artifacts. The benchmark treats this as an explicit artifact-audit issue and reports COCO-Ghost as a counterfactual stress test rather than proof that every masked-image YES is purely contextual.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

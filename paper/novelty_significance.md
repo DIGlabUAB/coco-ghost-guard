@@ -1,0 +1,7 @@
+# Novelty and Significance
+
+This project is positioned as a lightweight counterfactual diagnostic and mitigation method for object hallucination in vision-language models. Prior work has established that VLMs hallucinate objects and has proposed caption-level metrics, binary object-probing benchmarks, decoding-time mitigation, and post-hoc correction pipelines. COCO-Ghost differs by directly testing whether object claims survive controlled visual removal of the target object while preserving scene context. This focuses specifically on context-induced object persistence.
+
+GHOST-Guard differs from decoding-based methods because it does not require access to logits, attention maps, or model internals. It can operate as a black-box wrapper around local Ollama vision models. It differs from broad post-hoc correction systems because it targets a minimal and interpretable claim type: object presence. The central design principle is visual evidence survival: an object claim should be accepted only if it is supported by localized visual evidence and disappears when that evidence is removed.
+
+The significance of this project is practical. Many VLM deployments use models as black-box services or local APIs, where fine-tuning and decoding modifications are unavailable. A training-free evidence gate can improve reliability by converting unsupported visual claims into abstentions. This is especially relevant for safety-sensitive uses such as accessibility, robotics, surveillance, scientific image review, and future medical imaging applications.

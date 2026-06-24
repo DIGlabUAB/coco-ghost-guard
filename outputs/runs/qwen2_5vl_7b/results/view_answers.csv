@@ -1,0 +1,3301 @@
+sample_id,image_id,annotation_id,category_name,view,image_path,prompt,model,runtime_seconds,answer,evidence,parse_ok,raw_response
+tennis_racket_444142_654834,444142,654834,tennis racket,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_444142_654834/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,7.36237907409668,YES,A tennis racket is held in the player's right hand.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket is held in the player's right hand.""
+}
+```"
+tennis_racket_444142_654834,444142,654834,tennis racket,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_444142_654834/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.024968385696411,YES,A tennis racket with a white handle and black strings is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket with a white handle and black strings is clearly visible.""
+}
+```"
+tennis_racket_444142_654834,444142,654834,tennis racket,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_444142_654834/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.267098903656006,NO,The tennis racket is not visible in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""The tennis racket is not visible in the image.""
+}
+```"
+tennis_racket_369323_656095,369323,656095,tennis racket,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_369323_656095/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,2.9814398288726807,YES,A tennis racket is held by the person in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket is held by the person in the foreground.""
+}
+```"
+tennis_racket_369323_656095,369323,656095,tennis racket,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_369323_656095/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.164409875869751,YES,A tennis racket with strings and a handle is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket with strings and a handle is clearly visible.""
+}
+```"
+tennis_racket_369323_656095,369323,656095,tennis racket,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_369323_656095/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.281694173812866,YES,The object is partially visible and identifiable as a tennis racket.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The object is partially visible and identifiable as a tennis racket.""
+}
+```"
+tennis_racket_203864_657072,203864,657072,tennis racket,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_203864_657072/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3091418743133545,YES,Two tennis rackets are held by the individuals in the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Two tennis rackets are held by the individuals in the image.""
+}
+```"
+tennis_racket_203864_657072,203864,657072,tennis racket,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_203864_657072/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.42729115486145,YES,A hand holding a tennis racket with strings and handle is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A hand holding a tennis racket with strings and handle is clearly visible.""
+}
+```"
+tennis_racket_203864_657072,203864,657072,tennis racket,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_203864_657072/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.831043243408203,YES,A tennis racket is held by the person on the left.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket is held by the person on the left.""
+}
+```"
+tennis_racket_44877_656268,44877,656268,tennis racket,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_44877_656268/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.5572750568389893,YES,A tennis racket is held by the person in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket is held by the person in the foreground.""
+}
+```"
+tennis_racket_44877_656268,44877,656268,tennis racket,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_44877_656268/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.179600715637207,YES,A tennis racket with a blue grip is clearly visible in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket with a blue grip is clearly visible in the foreground.""
+}
+```"
+tennis_racket_44877_656268,44877,656268,tennis racket,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_44877_656268/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3712120056152344,YES,"A large, white object resembling a tennis racket is partially visible in the image.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A large, white object resembling a tennis racket is partially visible in the image.""
+}
+```"
+tennis_racket_522889_657613,522889,657613,tennis racket,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_522889_657613/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.4306039810180664,YES,A tennis racket is held by the player in a ready position.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket is held by the player in a ready position.""
+}
+```"
+tennis_racket_522889_657613,522889,657613,tennis racket,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_522889_657613/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.496407985687256,YES,A tennis racket with a black and white frame is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A tennis racket with a black and white frame is clearly visible.""
+}
+```"
+tennis_racket_522889_657613,522889,657613,tennis racket,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tennis_racket_522889_657613/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tennis racket"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.699979066848755,YES,The tennis racket is held by the player and is clearly visible in their hand.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The tennis racket is held by the player and is clearly visible in their hand.""
+}
+```"
+baseball_bat_57232_1476315,57232,1476315,baseball bat,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_57232_1476315/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.322943925857544,YES,Stack of wooden baseball bats with inscriptions and handles clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Stack of wooden baseball bats with inscriptions and handles clearly visible.""
+}
+```"
+baseball_bat_57232_1476315,57232,1476315,baseball bat,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_57232_1476315/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.344600200653076,YES,Wooden cylindrical objects resembling baseball bats are present.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Wooden cylindrical objects resembling baseball bats are present.""
+}
+```"
+baseball_bat_57232_1476315,57232,1476315,baseball bat,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_57232_1476315/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2679800987243652,YES,Stack of wooden baseball bats with inscriptions and handles clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Stack of wooden baseball bats with inscriptions and handles clearly visible.""
+}
+```"
+baseball_bat_158227_629940,158227,629940,baseball bat,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_158227_629940/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.467559814453125,YES,"A metallic object held in the boy's hands, consistent with a baseball bat.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A metallic object held in the boy's hands, consistent with a baseball bat.""
+}
+```"
+baseball_bat_158227_629940,158227,629940,baseball bat,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_158227_629940/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.446295976638794,YES,"A metallic object with a handle and grip, resembling a baseball bat.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A metallic object with a handle and grip, resembling a baseball bat.""
+}
+```"
+baseball_bat_158227_629940,158227,629940,baseball bat,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_158227_629940/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.495198965072632,YES,The object is held in the boy's hands and has a shape consistent with a baseball bat.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The object is held in the boy's hands and has a shape consistent with a baseball bat.""
+}
+```"
+baseball_bat_284743_627441,284743,627441,baseball bat,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_284743_627441/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.474916934967041,YES,A wooden object resembling a baseball bat is held by the person in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wooden object resembling a baseball bat is held by the person in the foreground.""
+}
+```"
+baseball_bat_284743_627441,284743,627441,baseball bat,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_284743_627441/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.4425342082977295,YES,A wooden object resembling a baseball bat is held by the person in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wooden object resembling a baseball bat is held by the person in the foreground.""
+}
+```"
+baseball_bat_284743_627441,284743,627441,baseball bat,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_284743_627441/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.4832839965820312,YES,"A large, elongated object resembling a baseball bat is held by the person in the foreground.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A large, elongated object resembling a baseball bat is held by the person in the foreground.""
+}
+```"
+baseball_bat_264968_631256,264968,631256,baseball bat,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_264968_631256/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3885931968688965,YES,A baseball bat is held in the player's right hand.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A baseball bat is held in the player's right hand.""
+}
+```"
+baseball_bat_264968_631256,264968,631256,baseball bat,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_264968_631256/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.362982988357544,YES,A baseball bat is held in the player's hand.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A baseball bat is held in the player's hand.""
+}
+```"
+baseball_bat_264968_631256,264968,631256,baseball bat,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_264968_631256/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.355654001235962,YES,A baseball bat is held in the player's right hand.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A baseball bat is held in the player's right hand.""
+}
+```"
+baseball_bat_254516_628997,254516,628997,baseball bat,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_254516_628997/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3648929595947266,YES,A baseball bat is held by the player in a batting stance.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A baseball bat is held by the player in a batting stance.""
+}
+```"
+baseball_bat_254516_628997,254516,628997,baseball bat,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_254516_628997/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2417550086975098,YES,A baseball bat is held by a person wearing gloves.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A baseball bat is held by a person wearing gloves.""
+}
+```"
+baseball_bat_254516_628997,254516,628997,baseball bat,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/baseball_bat_254516_628997/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""baseball bat"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.4244160652160645,YES,The object is held in the player's hands and has a shape consistent with a baseball bat.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The object is held in the player's hands and has a shape consistent with a baseball bat.""
+}
+```"
+skateboard_125472_639877,125472,639877,skateboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_125472_639877/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.31765079498291,YES,The skateboard is visible beneath the person's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The skateboard is visible beneath the person's feet.""
+}
+```"
+skateboard_125472_639877,125472,639877,skateboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_125472_639877/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2734248638153076,YES,A skateboard is visible in mid-air with wheels and trucks clearly seen.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A skateboard is visible in mid-air with wheels and trucks clearly seen.""
+}
+```"
+skateboard_125472_639877,125472,639877,skateboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_125472_639877/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3279170989990234,YES,The skateboard is partially visible beneath the person's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The skateboard is partially visible beneath the person's feet.""
+}
+```"
+skateboard_562229_639293,562229,639293,skateboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_562229_639293/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.106020927429199,YES,The person is standing on a skateboard.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The person is standing on a skateboard.""
+}
+```"
+skateboard_562229_639293,562229,639293,skateboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_562229_639293/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.198291778564453,YES,The image shows a red skateboard with white details.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a red skateboard with white details.""
+}
+```"
+skateboard_562229_639293,562229,639293,skateboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_562229_639293/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.1043291091918945,YES,The person is standing on a skateboard.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The person is standing on a skateboard.""
+}
+```"
+skateboard_279278_640440,279278,640440,skateboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_279278_640440/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3908040523529053,YES,A red skateboard with yellow wheels is partially visible under a person's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red skateboard with yellow wheels is partially visible under a person's feet.""
+}
+```"
+skateboard_279278_640440,279278,640440,skateboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_279278_640440/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2210280895233154,YES,A red skateboard with yellow wheels is partially visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red skateboard with yellow wheels is partially visible.""
+}
+```"
+skateboard_279278_640440,279278,640440,skateboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_279278_640440/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2984282970428467,NO,No skateboard is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No skateboard is visibly present in the image.""
+}
+```"
+skateboard_489924_639066,489924,639066,skateboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_489924_639066/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2297799587249756,YES,A skateboard with wheels and a deck is partially visible under the person's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A skateboard with wheels and a deck is partially visible under the person's feet.""
+}
+```"
+skateboard_489924_639066,489924,639066,skateboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_489924_639066/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.261955976486206,YES,The image shows a skateboard with wheels and a deck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a skateboard with wheels and a deck.""
+}
+```"
+skateboard_489924_639066,489924,639066,skateboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_489924_639066/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.159048318862915,YES,"A wooden board with feet on it, resembling a skateboard.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wooden board with feet on it, resembling a skateboard.""
+}
+```"
+skateboard_300842_643418,300842,643418,skateboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_300842_643418/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3627309799194336,YES,The image shows a skateboard with blue wheels and an orange deck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a skateboard with blue wheels and an orange deck.""
+}
+```"
+skateboard_300842_643418,300842,643418,skateboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_300842_643418/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3102610111236572,YES,The image shows a skateboard with blue wheels and part of the deck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a skateboard with blue wheels and part of the deck.""
+}
+```"
+skateboard_300842_643418,300842,643418,skateboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/skateboard_300842_643418/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""skateboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3296618461608887,YES,The image shows a skateboard with wheels and a deck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a skateboard with wheels and a deck.""
+}
+```"
+surfboard_127517_1481509,127517,1481509,surfboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_127517_1481509/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2616050243377686,YES,Multiple surfboards of various colors and designs are visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Multiple surfboards of various colors and designs are visible.""
+}
+```"
+surfboard_127517_1481509,127517,1481509,surfboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_127517_1481509/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3446168899536133,YES,"Two surfboards are visible, one green and one blue.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Two surfboards are visible, one green and one blue.""
+}
+```"
+surfboard_127517_1481509,127517,1481509,surfboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_127517_1481509/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.25370192527771,YES,Multiple surfboards of various colors and designs are visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Multiple surfboards of various colors and designs are visible.""
+}
+```"
+surfboard_381360_647841,381360,647841,surfboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_381360_647841/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.389119863510132,YES,A surfboard is partially visible under the surfer's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A surfboard is partially visible under the surfer's feet.""
+}
+```"
+surfboard_381360_647841,381360,647841,surfboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_381360_647841/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3036317825317383,YES,The image shows a surfboard with a green and white pattern.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a surfboard with a green and white pattern.""
+}
+```"
+surfboard_381360_647841,381360,647841,surfboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_381360_647841/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3781609535217285,YES,The surfboard is partially visible under the surfer's feet.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The surfboard is partially visible under the surfer's feet.""
+}
+```"
+surfboard_498807_651602,498807,651602,surfboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_498807_651602/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3692309856414795,YES,A pink surfboard is partially submerged in the water.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A pink surfboard is partially submerged in the water.""
+}
+```"
+surfboard_498807_651602,498807,651602,surfboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_498807_651602/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.50747013092041,YES,A pink and green object with a curved shape is partially submerged in water.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A pink and green object with a curved shape is partially submerged in water.""
+}
+```"
+surfboard_498807_651602,498807,651602,surfboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_498807_651602/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3640639781951904,YES,The surfboard is partially visible under the water.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The surfboard is partially visible under the water.""
+}
+```"
+surfboard_355677_650223,355677,650223,surfboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_355677_650223/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.427509307861328,YES,A yellow object with 'LIFEGUARD' written on it is present.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A yellow object with 'LIFEGUARD' written on it is present.""
+}
+```"
+surfboard_355677_650223,355677,650223,surfboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_355677_650223/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.45780086517334,YES,A yellow object with the word 'LIFEGUARD' is present.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A yellow object with the word 'LIFEGUARD' is present.""
+}
+```"
+surfboard_355677_650223,355677,650223,surfboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_355677_650223/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2826087474823,YES,A yellow object resembling a surfboard is present on the beach.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A yellow object resembling a surfboard is present on the beach.""
+}
+```"
+surfboard_199442_652517,199442,652517,surfboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_199442_652517/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.342932939529419,YES,A white surfboard with red markings is clearly visible beneath the surfer.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A white surfboard with red markings is clearly visible beneath the surfer.""
+}
+```"
+surfboard_199442_652517,199442,652517,surfboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_199442_652517/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.290271043777466,YES,A white surfboard with a red logo is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A white surfboard with a red logo is clearly visible.""
+}
+```"
+surfboard_199442_652517,199442,652517,surfboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/surfboard_199442_652517/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""surfboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.297339916229248,YES,A surfboard is partially visible under the surfer.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A surfboard is partially visible under the surfer.""
+}
+```"
+fork_75393_1520571,75393,1520571,fork,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_75393_1520571/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.364555835723877,YES,The image shows wooden objects with prongs resembling forks.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows wooden objects with prongs resembling forks.""
+}
+```"
+fork_75393_1520571,75393,1520571,fork,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_75393_1520571/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.6124579906463623,YES,A wooden fork is clearly visible in the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wooden fork is clearly visible in the image.""
+}
+```"
+fork_75393_1520571,75393,1520571,fork,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_75393_1520571/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.6959381103515625,YES,The image shows wooden objects with prongs resembling forks.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows wooden objects with prongs resembling forks.""
+}
+```"
+fork_322959_690753,322959,690753,fork,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_322959_690753/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.4106481075286865,YES,A fork is partially visible on the wooden board.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A fork is partially visible on the wooden board.""
+}
+```"
+fork_322959_690753,322959,690753,fork,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_322959_690753/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.340036153793335,YES,A metallic fork is partially visible under a knife.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A metallic fork is partially visible under a knife.""
+}
+```"
+fork_322959_690753,322959,690753,fork,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_322959_690753/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.2827179431915283,YES,A fork is partially visible on the wooden board.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A fork is partially visible on the wooden board.""
+}
+```"
+fork_173371_690999,173371,690999,fork,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_173371_690999/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.324146032333374,YES,Fork is partially visible on the left side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Fork is partially visible on the left side of the image.""
+}
+```"
+fork_173371_690999,173371,690999,fork,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_173371_690999/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.026556015014648,YES,A metallic fork is partially visible on a wooden surface.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A metallic fork is partially visible on a wooden surface.""
+}
+```"
+fork_173371_690999,173371,690999,fork,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_173371_690999/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.461803913116455,YES,A fork is partially visible on the left side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A fork is partially visible on the left side of the image.""
+}
+```"
+fork_17714_689203,17714,689203,fork,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_17714_689203/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.3844971656799316,YES,A fork is placed on the table next to a knife.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A fork is placed on the table next to a knife.""
+}
+```"
+fork_17714_689203,17714,689203,fork,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_17714_689203/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.589595317840576,YES,A metallic fork is clearly visible in the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A metallic fork is clearly visible in the image.""
+}
+```"
+fork_17714_689203,17714,689203,fork,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_17714_689203/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.493316888809204,YES,A fork is placed on the table next to a knife.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A fork is placed on the table next to a knife.""
+}
+```"
+fork_533958_688805,533958,688805,fork,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_533958_688805/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.494887113571167,YES,Part of a fork is visible on the left side of the plate.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Part of a fork is visible on the left side of the plate.""
+}
+```"
+fork_533958_688805,533958,688805,fork,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_533958_688805/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.504228115081787,YES,Metal prongs of a fork are visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Metal prongs of a fork are visible.""
+}
+```"
+fork_533958_688805,533958,688805,fork,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/fork_533958_688805/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""fork"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.6569390296936035,YES,Part of a fork is visible on the left side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Part of a fork is visible on the left side of the image.""
+}
+```"
+wine_glass_2157_1500881,2157,1500881,wine glass,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_2157_1500881/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.215476036071777,YES,"Clear glassware with stems, typical of wine glasses.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Clear glassware with stems, typical of wine glasses.""
+}
+```"
+wine_glass_2157_1500881,2157,1500881,wine glass,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_2157_1500881/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.106713056564331,YES,A clear glass object with a stem is partially visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass object with a stem is partially visible.""
+}
+```"
+wine_glass_2157_1500881,2157,1500881,wine glass,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_2157_1500881/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9715800285339355,YES,"Clear glassware with stems, typical of wine glasses.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Clear glassware with stems, typical of wine glasses.""
+}
+```"
+wine_glass_385029_661859,385029,661859,wine glass,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_385029_661859/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.400457382202148,YES,Two wine glasses are present on the table.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""Two wine glasses are present on the table.""
+}
+```"
+wine_glass_385029_661859,385029,661859,wine glass,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_385029_661859/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.264114141464233,YES,"A clear glass with a stem is visible, resembling a wine glass.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass with a stem is visible, resembling a wine glass.""
+}
+```"
+wine_glass_385029_661859,385029,661859,wine glass,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_385029_661859/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.136290788650513,YES,A wine glass is partially visible on the right side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wine glass is partially visible on the right side of the image.""
+}
+```"
+wine_glass_116208_664090,116208,664090,wine glass,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_116208_664090/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.380518198013306,YES,A clear glass with a stem is partially visible on the right side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass with a stem is partially visible on the right side of the image.""
+}
+```"
+wine_glass_116208_664090,116208,664090,wine glass,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_116208_664090/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.870490789413452,YES,A clear glass object with a stem and bowl shape is visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass object with a stem and bowl shape is visible.""
+}
+```"
+wine_glass_116208_664090,116208,664090,wine glass,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_116208_664090/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.256198883056641,YES,A clear glass with a stem is partially visible on the right side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass with a stem is partially visible on the right side of the image.""
+}
+```"
+wine_glass_355325_1496798,355325,1496798,wine glass,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_355325_1496798/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.262014865875244,YES,A wine glass filled with red liquid is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wine glass filled with red liquid is clearly visible.""
+}
+```"
+wine_glass_355325_1496798,355325,1496798,wine glass,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_355325_1496798/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.728572130203247,YES,A clear glass with a stem and bowl shape is visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass with a stem and bowl shape is visible.""
+}
+```"
+wine_glass_355325_1496798,355325,1496798,wine glass,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_355325_1496798/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.373283863067627,YES,A wine glass filled with red liquid is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wine glass filled with red liquid is clearly visible.""
+}
+```"
+wine_glass_25394_661323,25394,661323,wine glass,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_25394_661323/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.391105890274048,YES,A wine glass is partially visible in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A wine glass is partially visible in the foreground.""
+}
+```"
+wine_glass_25394_661323,25394,661323,wine glass,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_25394_661323/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.859046697616577,YES,"A clear glass with a stem and base, typically used for wine.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A clear glass with a stem and base, typically used for wine.""
+}
+```"
+wine_glass_25394_661323,25394,661323,wine glass,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/wine_glass_25394_661323/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""wine glass"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.851589918136597,YES,A hand holding a wine glass is partially visible in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A hand holding a wine glass is partially visible in the foreground.""
+}
+```"
+laptop_89648_1098172,89648,1098172,laptop,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_89648_1098172/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,6.824695825576782,YES,A person is using a laptop on the right side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A person is using a laptop on the right side of the image.""
+}
+```"
+laptop_89648_1098172,89648,1098172,laptop,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_89648_1098172/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.648986101150513,YES,A black laptop with a screen displaying text is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black laptop with a screen displaying text is clearly visible.""
+}
+```"
+laptop_89648_1098172,89648,1098172,laptop,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_89648_1098172/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.402163982391357,NO,No laptops are visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No laptops are visibly present in the image.""
+}
+```"
+laptop_497599_1100722,497599,1100722,laptop,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_497599_1100722/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.149598121643066,YES,A portion of a laptop is visible in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A portion of a laptop is visible in the foreground.""
+}
+```"
+laptop_497599_1100722,497599,1100722,laptop,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_497599_1100722/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.002854108810425,YES,A portion of a laptop is visible in the foreground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A portion of a laptop is visible in the foreground.""
+}
+```"
+laptop_497599_1100722,497599,1100722,laptop,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_497599_1100722/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.90819787979126,NO,No laptop is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No laptop is visibly present in the image.""
+}
+```"
+laptop_134112_1097652,134112,1097652,laptop,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_134112_1097652/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.371678113937378,YES,A silver laptop with an HP logo is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A silver laptop with an HP logo is clearly visible.""
+}
+```"
+laptop_134112_1097652,134112,1097652,laptop,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_134112_1097652/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.336855173110962,YES,A laptop is partially visible with a keyboard and screen.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A laptop is partially visible with a keyboard and screen.""
+}
+```"
+laptop_134112_1097652,134112,1097652,laptop,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_134112_1097652/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.578207969665527,YES,"A large, rectangular object with a screen and keyboard area is present.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A large, rectangular object with a screen and keyboard area is present.""
+}
+```"
+laptop_435003_1100109,435003,1100109,laptop,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_435003_1100109/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.301980972290039,YES,A laptop is partially visible on the left side of the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A laptop is partially visible on the left side of the desk.""
+}
+```"
+laptop_435003_1100109,435003,1100109,laptop,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_435003_1100109/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.290753126144409,YES,A black laptop with a blue sky wallpaper is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black laptop with a blue sky wallpaper is clearly visible on the desk.""
+}
+```"
+laptop_435003_1100109,435003,1100109,laptop,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_435003_1100109/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.2321388721466064,YES,A partially visible laptop is on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A partially visible laptop is on the desk.""
+}
+```"
+laptop_80949_1098811,80949,1098811,laptop,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_80949_1098811/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.0091493129730225,YES,The image shows a laptop with a cat lying on it.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a laptop with a cat lying on it.""
+}
+```"
+laptop_80949_1098811,80949,1098811,laptop,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_80949_1098811/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,1.0466418266296387,YES,The image shows a laptop with a cat lying on it.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a laptop with a cat lying on it.""
+}
+```"
+laptop_80949_1098811,80949,1098811,laptop,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/laptop_80949_1098811/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""laptop"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,5.592134237289429,YES,"The image shows a cat lying on what appears to be the surface of a laptop, with part of the keyboard and trackpad visible.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a cat lying on what appears to be the surface of a laptop, with part of the keyboard and trackpad visible.""
+}
+```"
+keyboard_181499_1116028,181499,1116028,keyboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_181499_1116028/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.65781307220459,YES,The image shows a laptop with a keyboard.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a laptop with a keyboard.""
+}
+```"
+keyboard_181499_1116028,181499,1116028,keyboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_181499_1116028/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.638803005218506,YES,A portion of a keyboard is clearly visible in the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A portion of a keyboard is clearly visible in the image.""
+}
+```"
+keyboard_181499_1116028,181499,1116028,keyboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_181499_1116028/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.546468019485474,NO,"The image shows a laptop with the screen displaying an update message, but no keyboard is visible.",True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""The image shows a laptop with the screen displaying an update message, but no keyboard is visible.""
+}
+```"
+keyboard_225757_1114694,225757,1114694,keyboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_225757_1114694/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.399019002914429,YES,A white keyboard is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A white keyboard is clearly visible on the desk.""
+}
+```"
+keyboard_225757_1114694,225757,1114694,keyboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_225757_1114694/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.495692014694214,YES,A white keyboard with a curved design is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A white keyboard with a curved design is clearly visible on the desk.""
+}
+```"
+keyboard_225757_1114694,225757,1114694,keyboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_225757_1114694/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.284560918807983,YES,A keyboard is partially visible on the left side of the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A keyboard is partially visible on the left side of the desk.""
+}
+```"
+keyboard_246308_1115126,246308,1115126,keyboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_246308_1115126/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.097607135772705,YES,A black keyboard is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black keyboard is clearly visible on the desk.""
+}
+```"
+keyboard_246308_1115126,246308,1115126,keyboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_246308_1115126/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.161090850830078,YES,A black keyboard with white keys is clearly visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black keyboard with white keys is clearly visible.""
+}
+```"
+keyboard_246308_1115126,246308,1115126,keyboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_246308_1115126/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.056341886520386,YES,A laptop is present with a keyboard visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A laptop is present with a keyboard visible.""
+}
+```"
+keyboard_371677_1115356,371677,1115356,keyboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_371677_1115356/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.047641038894653,YES,A keyboard is partially visible under the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A keyboard is partially visible under the desk.""
+}
+```"
+keyboard_371677_1115356,371677,1115356,keyboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_371677_1115356/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.221729040145874,YES,The image shows a keyboard with keys and a spacebar.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a keyboard with keys and a spacebar.""
+}
+```"
+keyboard_371677_1115356,371677,1115356,keyboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_371677_1115356/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9579427242279053,YES,A keyboard is partially visible under the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A keyboard is partially visible under the desk.""
+}
+```"
+keyboard_189820_1975515,189820,1975515,keyboard,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_189820_1975515/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.14530086517334,YES,A black keyboard is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black keyboard is clearly visible on the desk.""
+}
+```"
+keyboard_189820_1975515,189820,1975515,keyboard,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_189820_1975515/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.1175620555877686,YES,A black keyboard with a numeric keypad is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black keyboard with a numeric keypad is clearly visible on the desk.""
+}
+```"
+keyboard_189820_1975515,189820,1975515,keyboard,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/keyboard_189820_1975515/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""keyboard"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.028529167175293,YES,A keyboard is clearly visible on the desk.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A keyboard is clearly visible on the desk.""
+}
+```"
+handbag_554002_1175897,554002,1175897,handbag,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_554002_1175897/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.186300992965698,YES,A black bag is partially visible on the left side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A black bag is partially visible on the left side of the image.""
+}
+```"
+handbag_554002_1175897,554002,1175897,handbag,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_554002_1175897/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.062265872955322,YES,"A dark rectangular object with a strap is visible, resembling a handbag.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A dark rectangular object with a strap is visible, resembling a handbag.""
+}
+```"
+handbag_554002_1175897,554002,1175897,handbag,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_554002_1175897/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.252626895904541,NO,No handbag is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No handbag is visibly present in the image.""
+}
+```"
+handbag_115245_1837158,115245,1837158,handbag,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_115245_1837158/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.872967004776001,YES,A bag with a patterned design is visible on the table.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A bag with a patterned design is visible on the table.""
+}
+```"
+handbag_115245_1837158,115245,1837158,handbag,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_115245_1837158/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.098479986190796,YES,The image shows a fabric item with a pattern that resembles a handbag.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a fabric item with a pattern that resembles a handbag.""
+}
+```"
+handbag_115245_1837158,115245,1837158,handbag,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_115245_1837158/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.7631337642669678,NO,No handbag is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No handbag is visibly present in the image.""
+}
+```"
+handbag_414510_1172995,414510,1172995,handbag,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_414510_1172995/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.078565835952759,YES,A bag is visible on the ground near the person sitting.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A bag is visible on the ground near the person sitting.""
+}
+```"
+handbag_414510_1172995,414510,1172995,handbag,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_414510_1172995/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.990901231765747,NO,No handbag is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No handbag is visibly present in the image.""
+}
+```"
+handbag_414510_1172995,414510,1172995,handbag,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_414510_1172995/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.96292781829834,YES,A bag is partially visible near the person sitting on the ground.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A bag is partially visible near the person sitting on the ground.""
+}
+```"
+handbag_474293_1430604,474293,1430604,handbag,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_474293_1430604/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.014837026596069,YES,"A person is carrying a bag, partially visible on the right side of the image.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A person is carrying a bag, partially visible on the right side of the image.""
+}
+```"
+handbag_474293_1430604,474293,1430604,handbag,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_474293_1430604/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.8861799240112305,NO,No handbag is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No handbag is visibly present in the image.""
+}
+```"
+handbag_474293_1430604,474293,1430604,handbag,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_474293_1430604/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.976058006286621,YES,"A person is carrying a bag, partially visible on the right side of the image.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A person is carrying a bag, partially visible on the right side of the image.""
+}
+```"
+handbag_190923_1173865,190923,1173865,handbag,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_190923_1173865/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.880373954772949,YES,A person is carrying a bag with straps over their shoulder.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A person is carrying a bag with straps over their shoulder.""
+}
+```"
+handbag_190923_1173865,190923,1173865,handbag,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_190923_1173865/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.82775616645813,YES,A green and black bag with a strap is visible.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A green and black bag with a strap is visible.""
+}
+```"
+handbag_190923_1173865,190923,1173865,handbag,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/handbag_190923_1173865/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""handbag"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.938900947570801,YES,A handbag is partially visible on the right side of the image.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A handbag is partially visible on the right side of the image.""
+}
+```"
+tie_8532_295311,8532,295311,tie,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_8532_295311/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9389212131500244,YES,A red tie is visible around the man's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red tie is visible around the man's neck.""
+}
+```"
+tie_8532_295311,8532,295311,tie,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_8532_295311/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.8134751319885254,YES,"A red textured object is visible, resembling a tie.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red textured object is visible, resembling a tie.""
+}
+```"
+tie_8532_295311,8532,295311,tie,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_8532_295311/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9344677925109863,YES,A red tie is visible around the man's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red tie is visible around the man's neck.""
+}
+```"
+tie_287527_294950,287527,294950,tie,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_287527_294950/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.7383790016174316,YES,A portion of a tie is visible on the left side.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A portion of a tie is visible on the left side.""
+}
+```"
+tie_287527_294950,287527,294950,tie,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_287527_294950/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9230082035064697,YES,"The image shows a dark, narrow object resembling a tie.",True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""The image shows a dark, narrow object resembling a tie.""
+}
+```"
+tie_287527_294950,287527,294950,tie,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_287527_294950/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.638592004776001,NO,No tie is visibly present in the image.,True,"```json
+{
+  ""answer"": ""NO"",
+  ""evidence"": ""No tie is visibly present in the image.""
+}
+```"
+tie_450075_293642,450075,293642,tie,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_450075_293642/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.879689931869507,YES,A person is adjusting a necktie on another individual.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A person is adjusting a necktie on another individual.""
+}
+```"
+tie_450075_293642,450075,293642,tie,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_450075_293642/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.930654287338257,YES,A hand is adjusting a necktie on the person's collar.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A hand is adjusting a necktie on the person's collar.""
+}
+```"
+tie_450075_293642,450075,293642,tie,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_450075_293642/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.8505640029907227,YES,A white ribbon-like object is being adjusted around the person's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A white ribbon-like object is being adjusted around the person's neck.""
+}
+```"
+tie_151657_295651,151657,295651,tie,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_151657_295651/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,4.009866714477539,YES,A red object resembling a tie is visible around the neck of the person on the left.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red object resembling a tie is visible around the neck of the person on the left.""
+}
+```"
+tie_151657_295651,151657,295651,tie,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_151657_295651/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.76933217048645,YES,A red tie is clearly visible around the person's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red tie is clearly visible around the person's neck.""
+}
+```"
+tie_151657_295651,151657,295651,tie,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_151657_295651/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.870898723602295,YES,A red tie is visible around the man's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A red tie is visible around the man's neck.""
+}
+```"
+tie_20333_295083,20333,295083,tie,original,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_20333_295083/original.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.9712181091308594,YES,A colorful tie with tree patterns is clearly visible around the child's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A colorful tie with tree patterns is clearly visible around the child's neck.""
+}
+```"
+tie_20333_295083,20333,295083,tie,crop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_20333_295083/crop.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.904815196990967,YES,A colorful tie with tree patterns is clearly visible around the person's neck.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A colorful tie with tree patterns is clearly visible around the person's neck.""
+}
+```"
+tie_20333_295083,20333,295083,tie,masked,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals/tie_20333_295083/masked.jpg,"You are a careful visual verifier. Look only at visible pixels in the image.
+
+Question: Is there a ""tie"" visible in this image?
+
+Rules:
+- Answer YES only if the object itself is visibly present.
+- Answer NO if the object is not visible.
+- Answer UNSURE if the image is ambiguous or the object is occluded.
+- Do not infer from scene context.
+- Do not infer from what would usually be present.
+- Return strict JSON only.
+
+JSON schema:
+{
+  ""answer"": ""YES"" | ""NO"" | ""UNSURE"",
+  ""evidence"": ""short phrase describing visible evidence only""
+}",qwen2.5vl:7b,3.8955929279327393,YES,A triangular object resembling a tie is partially visible behind the child.,True,"```json
+{
+  ""answer"": ""YES"",
+  ""evidence"": ""A triangular object resembling a tie is partially visible behind the child.""
+}
+```"

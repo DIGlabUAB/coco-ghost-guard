@@ -1,0 +1,81 @@
+metric,label,value,n,category_name
+original_yes_rate,Original YES Rate,1.0,5,baseball bat
+crop_yes_rate,Crop YES Rate,1.0,5,baseball bat
+masked_yes_rate,Masked YES Rate,1.0,5,baseball bat
+ghost_object_rate,Ghost Object Rate,1.0,5,baseball bat
+context_persistence_index,Context Persistence Index,1.0,5,baseball bat
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,baseball bat
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,baseball bat
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,baseball bat
+original_yes_rate,Original YES Rate,1.0,5,fork
+crop_yes_rate,Crop YES Rate,1.0,5,fork
+masked_yes_rate,Masked YES Rate,1.0,5,fork
+ghost_object_rate,Ghost Object Rate,1.0,5,fork
+context_persistence_index,Context Persistence Index,1.0,5,fork
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,fork
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,fork
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,fork
+original_yes_rate,Original YES Rate,1.0,5,handbag
+crop_yes_rate,Crop YES Rate,0.6,5,handbag
+masked_yes_rate,Masked YES Rate,0.6,5,handbag
+ghost_object_rate,Ghost Object Rate,0.6,5,handbag
+context_persistence_index,Context Persistence Index,0.6,5,handbag
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,handbag
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,handbag
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,handbag
+original_yes_rate,Original YES Rate,1.0,5,keyboard
+crop_yes_rate,Crop YES Rate,1.0,5,keyboard
+masked_yes_rate,Masked YES Rate,0.8,5,keyboard
+ghost_object_rate,Ghost Object Rate,0.8,5,keyboard
+context_persistence_index,Context Persistence Index,0.8,5,keyboard
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,keyboard
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,keyboard
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,keyboard
+original_yes_rate,Original YES Rate,1.0,5,laptop
+crop_yes_rate,Crop YES Rate,1.0,5,laptop
+masked_yes_rate,Masked YES Rate,0.6,5,laptop
+ghost_object_rate,Ghost Object Rate,0.6,5,laptop
+context_persistence_index,Context Persistence Index,0.6,5,laptop
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.4,5,laptop
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.6,5,laptop
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,laptop
+original_yes_rate,Original YES Rate,1.0,5,skateboard
+crop_yes_rate,Crop YES Rate,1.0,5,skateboard
+masked_yes_rate,Masked YES Rate,0.8,5,skateboard
+ghost_object_rate,Ghost Object Rate,0.8,5,skateboard
+context_persistence_index,Context Persistence Index,0.8,5,skateboard
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,skateboard
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,skateboard
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,skateboard
+original_yes_rate,Original YES Rate,1.0,5,surfboard
+crop_yes_rate,Crop YES Rate,1.0,5,surfboard
+masked_yes_rate,Masked YES Rate,1.0,5,surfboard
+ghost_object_rate,Ghost Object Rate,1.0,5,surfboard
+context_persistence_index,Context Persistence Index,1.0,5,surfboard
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,surfboard
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,surfboard
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,surfboard
+original_yes_rate,Original YES Rate,1.0,5,tennis racket
+crop_yes_rate,Crop YES Rate,1.0,5,tennis racket
+masked_yes_rate,Masked YES Rate,0.8,5,tennis racket
+ghost_object_rate,Ghost Object Rate,0.8,5,tennis racket
+context_persistence_index,Context Persistence Index,0.8,5,tennis racket
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,tennis racket
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,tennis racket
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tennis racket
+original_yes_rate,Original YES Rate,1.0,5,tie
+crop_yes_rate,Crop YES Rate,1.0,5,tie
+masked_yes_rate,Masked YES Rate,0.8,5,tie
+ghost_object_rate,Ghost Object Rate,0.8,5,tie
+context_persistence_index,Context Persistence Index,0.8,5,tie
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.2,5,tie
+guard_abstention_rate,GHOST-Guard Abstention Rate,0.8,5,tie
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,tie
+original_yes_rate,Original YES Rate,1.0,5,wine glass
+crop_yes_rate,Crop YES Rate,1.0,5,wine glass
+masked_yes_rate,Masked YES Rate,1.0,5,wine glass
+ghost_object_rate,Ghost Object Rate,1.0,5,wine glass
+context_persistence_index,Context Persistence Index,1.0,5,wine glass
+guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.0,5,wine glass
+guard_abstention_rate,GHOST-Guard Abstention Rate,1.0,5,wine glass
+prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,5,wine glass
