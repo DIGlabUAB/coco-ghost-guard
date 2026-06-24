@@ -1,168 +1,219 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>COCO-Ghost + GHOST-Guard</title>
-    <meta name="description" content="Audited counterfactual evidence gating for context-induced object hallucination in local vision-language models.">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="An audited counterfactual benchmark for context-induced object persistence in local vision-language models." />
+    <meta property="og:title" content="COCO-Ghost + GHOST-Guard" />
+    <meta property="og:description" content="On 200 clean COCO occlusion counterfactuals, local VLMs still report removed objects in 33.7-51.6% of originally recognized cases." />
+    <meta property="og:type" content="article" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400..700&family=Spline+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="nav">
-        <a class="brand" href="#">COCO-Ghost</a>
-        <div class="links">
-          <a href="https://github.com/DIGlabUAB/coco-ghost-guard">GitHub</a>
-          <a href="#results">Results</a>
-          <a href="#method">Method</a>
-        </div>
+    <header class="topbar">
+      <a href="#top" class="home">COCO-Ghost</a>
+      <nav>
+        <a href="#findings">Findings</a>
+        <a href="#examples">Examples</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#guard">Guard</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#reproduce">Reproduce</a>
       </nav>
-      <div class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">Audited COCO counterfactuals · local VLMs · black-box abstention</p>
-          <h1>Does an object claim survive after the object evidence is removed?</h1>
-          <p class="lead">
-            COCO-Ghost tests whether VLM object-presence claims persist under conservative bbox occlusion. GHOST-Guard accepts a claim only when the original image and crop support it, and the claim disappears after removal.
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="https://github.com/DIGlabUAB/coco-ghost-guard">View Repository</a>
-            <a class="button" href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Read Results</a>
-          </div>
-        </section>
-        <section class="metric-panel" aria-label="Key experiment results">
-          <div>
-            <span class="metric">1,800</span>
-            <span class="label">local VLM calls</span>
-          </div>
-          <div>
-            <span class="metric">200</span>
-            <span class="label">clean-removal COCO instances</span>
-          </div>
-          <div>
-            <span class="metric">51.6%</span>
-            <span class="label">clean ghost rate on Qwen2.5-VL 7B</span>
-          </div>
-          <div>
-            <span class="metric">0.0%</span>
-            <span class="label">accepted ghost claims after GHOST-Guard</span>
-          </div>
-        </section>
-      </div>
     </header>
 
-    <main>
-      <section id="results" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Scaled clean-removal experiment</p>
-          <h2>Three local VLMs, same 200 audited occlusion counterfactuals</h2>
-          <p>
-            The scaled run uses padded bounding-box occlusion with solid local-mean fill. All 200 removals were labeled clean, so the headline ghost rates are not driven by visible object-shaped blur.
-          </p>
+    <main id="top">
+      <div class="header">
+        <span class="eyebrow">Vision-language model reliability · COCO counterfactuals</span>
+        <h1 class="title">COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal</h1>
+        <p class="authors">DIG Lab, University of Alabama at Birmingham</p>
+        <p class="venue">Project page · June 2026 · open code, cached outputs, and reproducible local runs</p>
+        <p class="lead">
+          COCO-Ghost asks a blunt visual question: if the target object is removed by a conservative occlusion, does a VLM still say it is visible? GHOST-Guard is a black-box evidence gate that abstains when the claim survives removal.
+        </p>
+        <div class="btns">
+          <a class="btn" href="https://github.com/DIGlabUAB/coco-ghost-guard">Code</a>
+          <a class="btn ghost" href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Results</a>
+          <a class="btn ghost" href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/ARTIFACT_AUDIT.md">Artifact audit</a>
+          <a class="btn ghost" href="#reproduce">Reproduce</a>
         </div>
-        <div class="table-wrap">
+      </div>
+
+      <section id="findings" class="story">
+        <span class="kicker">Main finding</span>
+        <h2 class="story-h">Clean occlusion removes the silhouette objection; context persistence remains</h2>
+        <p class="story-sub">
+          We moved away from blur masks after visual inspection showed that blurred segmentation regions can preserve object shape. The scaled result uses padded bounding-box occlusion with solid local-mean fill and reports all headline metrics on <em>200/200 clean-removal</em> cases.
+        </p>
+        <div class="finding-grid">
+          <div class="finding-card">
+            <div class="lbl">Qwen2.5-VL 7B clean ghost rate</div>
+            <span class="count bad">51.6%</span>
+            <p>99 of 192 originally recognized objects were still claimed after clean occlusion.</p>
+          </div>
+          <div class="finding-card">
+            <div class="lbl">Qwen2.5-VL 3B / LLaVA 7B</div>
+            <span class="count bad">47.5 / 33.7%</span>
+            <p>The effect is not isolated to one local VLM family, though LLaVA has weaker original recognition.</p>
+          </div>
+          <div class="finding-card">
+            <div class="lbl">Accepted detected ghost claims</div>
+            <span class="count good">0.0%</span>
+            <p>GHOST-Guard converts detected persistence cases to <code>UNSURE</code>; it is an abstention wrapper, not a model fix.</p>
+          </div>
+        </div>
+        <div class="note">
+          <span class="tag">Important reading</span>
+          Some failures are exactly what a strong scene prior looks like: a player without equipment, a sink scene without a cup, a shelf after a bottle is occluded. That is the point of the benchmark, not a flaw to hide. The page below shows both successes and failures.
+        </div>
+      </section>
+
+      <section id="examples">
+        <h2><span class="n">1</span>Qualitative evidence: successes and failures</h2>
+        <p>
+          The examples below use the same Qwen2.5-VL 7B decision rule as the headline result. A success means the model answers <code>NO</code> after occlusion and the guard accepts the original object claim. A failure means the model still answers <code>YES</code> after clean occlusion, so the guard abstains.
+        </p>
+        <figure>
+          <img src="assets/success_failure_examples.png" alt="Success and failure examples showing original, crop, and bbox-occluded images." />
+          <figcaption><b>Figure 1.</b> Evidence-gate examples. The failure cases are not presented as surprising magic tricks; they are exactly where contextual priors can dominate after the target object is removed.</figcaption>
+        </figure>
+      </section>
+
+      <section id="method">
+        <h2><span class="n">2</span>Method: ask whether evidence survives removal</h2>
+        <div class="route">
+          <div>
+            <h3>Three views per COCO instance</h3>
+            <p><b>Original</b> asks whether the object is visible in the full image. <b>Crop</b> checks local visual support. <b>Occluded</b> removes a padded target-object bounding box using solid local-mean fill.</p>
+          </div>
+          <div>
+            <h3>Guard rule</h3>
+            <pre class="mini"><code>accept iff
+original = YES
+crop     = YES
+masked   = NO</code></pre>
+          </div>
+        </div>
+        <p>
+          The intervention is intentionally conservative. It is not a photorealistic inpainting claim; it is an occlusion counterfactual for testing whether object-presence judgments depend on visible object evidence.
+        </p>
+      </section>
+
+      <section id="results">
+        <h2><span class="n">3</span>Scaled clean-removal results</h2>
+        <p>
+          We evaluate 200 COCO validation instances across 20 object categories, with 3 views per instance and 3 local Ollama VLMs. Artifact labeling marked all 200 bbox-solid removals as <code>clean_removal</code>.
+        </p>
+        <div class="table-scroll">
           <table>
+            <caption><b>Table 1.</b> Clean-removal results. Ghost rate is computed among original-YES cases, so LLaVA's lower rate should be read with its lower original recognition.</caption>
             <thead>
-              <tr>
-                <th>Model</th>
-                <th>Original YES</th>
-                <th>Crop YES</th>
-                <th>Masked YES</th>
-                <th>Clean Ghost Rate</th>
-                <th>Guard Accept</th>
-                <th>Guard Abstain</th>
-              </tr>
+              <tr><th>Model</th><th class="n">Original YES</th><th class="n">Crop YES</th><th class="n">Masked YES</th><th class="n">Clean ghost rate</th><th class="n">Guard accept</th><th class="n">Guard abstain</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>qwen2.5vl:7b</td>
-                <td>96.0%</td>
-                <td>94.5%</td>
-                <td>49.5%</td>
-                <td>51.6%</td>
-                <td>44.5%</td>
-                <td>51.5%</td>
-              </tr>
-              <tr>
-                <td>qwen2.5vl:3b</td>
-                <td>88.5%</td>
-                <td>80.0%</td>
-                <td>43.0%</td>
-                <td>47.5%</td>
-                <td>30.0%</td>
-                <td>58.5%</td>
-              </tr>
-              <tr>
-                <td>llava:7b</td>
-                <td>43.0%</td>
-                <td>60.5%</td>
-                <td>14.5%</td>
-                <td>33.7%</td>
-                <td>24.5%</td>
-                <td>18.5%</td>
-              </tr>
+              <tr class="hi"><td>qwen2.5vl:7b</td><td class="n">96.0%</td><td class="n">94.5%</td><td class="n">49.5%</td><td class="n neg">51.6%</td><td class="n">44.5%</td><td class="n">51.5%</td></tr>
+              <tr><td>qwen2.5vl:3b</td><td class="n">88.5%</td><td class="n">80.0%</td><td class="n">43.0%</td><td class="n neg">47.5%</td><td class="n">30.0%</td><td class="n">58.5%</td></tr>
+              <tr><td>llava:7b</td><td class="n">43.0%</td><td class="n">60.5%</td><td class="n">14.5%</td><td class="n neg">33.7%</td><td class="n">24.5%</td><td class="n">18.5%</td></tr>
             </tbody>
           </table>
         </div>
-        <figure class="figure">
-          <img src="assets/model_metric_comparison.png" alt="Bar chart comparing COCO-Ghost metrics across llava 7b, qwen2.5vl 3b, and qwen2.5vl 7b.">
+        <figure>
+          <img src="assets/model_metric_comparison.png" alt="Bar chart comparing aggregate COCO-Ghost metrics across three local VLMs." />
+          <figcaption><b>Figure 2.</b> Aggregate metrics across the three local VLMs.</figcaption>
         </figure>
       </section>
 
-      <section class="section split">
-        <div>
-          <p class="eyebrow">Safety wrapper behavior</p>
-          <h2>Crop evidence alone is not enough</h2>
-          <p>
-            A crop-only gate checks local recognizability, but it does not test whether an object claim disappears after the object is removed. On Qwen2.5-VL 7B, crop-gating still accepted 51.4% ghost claims. GHOST-Guard adds the masked counterfactual check and accepts 0.0% detected ghost claims.
-          </p>
-        </div>
-        <div class="callout">
-          <p class="callout-title">Main finding</p>
-          <p>Even under clean bbox occlusion, local VLMs still report removed objects in 33.7% to 51.6% of originally recognized cases.</p>
-        </div>
-      </section>
-
-      <section id="method" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Method</p>
-          <h2>Evidence survival under object removal</h2>
-        </div>
-        <div class="steps">
-          <article>
-            <span>1</span>
-            <h3>Select COCO instances</h3>
-            <p>Sample target object categories with usable annotations and moderate object area.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Create three views</h3>
-            <p>Save original, object crop, and bbox-occluded image with the target region replaced by local-mean color.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Audit removals</h3>
-            <p>Label counterfactual quality and report clean-removal results separately from artifact-prone cases.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Apply GHOST-Guard</h3>
-            <p>Accept only original YES, crop YES, masked NO. Otherwise downgrade suspicious claims to UNSURE.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <p class="eyebrow">Qualitative examples</p>
-          <h2>The stricter mask removes the silhouette objection</h2>
-        </div>
-        <figure class="figure tall">
-          <img src="assets/example_contact_sheet.png" alt="Contact sheet showing original, crop, and bbox-occluded counterfactual examples with VLM answers.">
+      <section id="categories">
+        <h2><span class="n">4</span>Where persistence concentrates</h2>
+        <p>
+          The category pattern is not uniform. Some categories are heavily scene-prior driven across models, while others are easier for the model to reject after occlusion. This is why the benchmark is more useful as a diagnostic than as a single leaderboard number.
+        </p>
+        <figure>
+          <img src="assets/category_model_heatmap.png" alt="Heatmap of ghost object rates by category and model." />
+          <figcaption><b>Figure 3.</b> Clean Ghost Object Rate by category and model. High rates for objects such as cups, bottles, bowls, chairs, and wine glasses suggest strong object-context priors.</figcaption>
         </figure>
-        <p class="note">
-          Earlier blur-fill masks preserved object-shaped residuals in some examples. The scaled headline therefore uses bbox-solid occlusion and reports artifact labels, trading realism for a cleaner evidence test.
+        <figure>
+          <img src="assets/cross_model_persistence.png" alt="Cross-model persistence chart showing how many models ghost each image and categories with multi-model persistence." />
+          <figcaption><b>Figure 4.</b> Cross-model persistence on the shared 200-image set. 26 samples are ghosted by all three models; 52 are ghosted by two models.</figcaption>
+        </figure>
+      </section>
+
+      <section id="guard">
+        <h2><span class="n">5</span>Why the guard is useful in applications</h2>
+        <p>
+          GHOST-Guard is useful when a system needs to decide whether to trust an object-presence claim from a black-box VLM. It does not require gradients, logits, model internals, or retraining. It asks for localized evidence and then checks whether the claim disappears when the evidence is removed.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <caption><b>Table 2.</b> Baseline safety comparison. Crop-gating helps but still accepts many claims that survive removal.</caption>
+            <thead>
+              <tr><th>Model</th><th class="n">Original-only ghost accepts</th><th class="n">Crop-gate ghost accepts</th><th class="n">GHOST-Guard ghost accepts</th><th class="n">GHOST-Guard abstain</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>qwen2.5vl:7b</td><td class="n neg">51.6%</td><td class="n neg">51.4%</td><td class="n pos">0.0%</td><td class="n">51.5%</td></tr>
+              <tr><td>qwen2.5vl:3b</td><td class="n neg">47.5%</td><td class="n neg">44.7%</td><td class="n pos">0.0%</td><td class="n">58.5%</td></tr>
+              <tr><td>llava:7b</td><td class="n neg">33.7%</td><td class="n neg">30.0%</td><td class="n pos">0.0%</td><td class="n">18.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          In practical systems, this is an abstention layer: route uncertain object claims to a human, another detector, or a higher-cost verification path rather than letting a VLM silently assert unsupported presence.
         </p>
       </section>
+
+      <section id="artifacts">
+        <h2><span class="n">6</span>Artifact audit and the blur-mask caveat</h2>
+        <p>
+          The first expanded runs used segmentation blur. Visual inspection showed that blur could preserve the object's silhouette, especially for elongated or high-contrast objects. Those results are now treated as an ablation and motivation for the stricter scaled protocol.
+        </p>
+        <figure>
+          <img src="assets/removal_method_focused_contact_sheet.png" alt="Comparison of blur, inpainting, patch, and bbox-solid removal methods." />
+          <figcaption><b>Figure 5.</b> Removal-method comparison. The bbox-solid intervention is less naturalistic, but it reduces residual object-shape leakage and makes the headline claim more conservative.</figcaption>
+        </figure>
+        <div class="note warn">
+          <span class="tag">Scope</span>
+          COCO-Ghost should be read as a counterfactual stress test for object-presence claims, not as proof that every masked-image YES is a hallucination in the human sense.
+        </div>
+      </section>
+
+      <section id="reproduce">
+        <h2><span class="n">7</span>Reproducibility</h2>
+        <p>The repository includes configs, archived outputs, artifact labels, and comparison figures for the 200-sample run.</p>
+        <pre class="term"><span class="bar"><i></i><i></i><i></i><span>bash</span></span><code><span class="c"># local setup</span>
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+ollama pull qwen2.5vl:7b
+ollama pull qwen2.5vl:3b
+ollama pull llava:7b
+
+<span class="c"># scaled suite: 200 samples, three local VLMs</span>
+bash scripts/run_large_200_model_suite.sh
+
+<span class="c"># generated summaries</span>
+python -m src.compare_runs --runs large200_bboxsolid_qwen2_5vl_7b large200_bboxsolid_qwen2_5vl_3b large200_bboxsolid_llava_7b
+python -m src.clean_removal_report --runs large200_bboxsolid_qwen2_5vl_7b large200_bboxsolid_qwen2_5vl_3b large200_bboxsolid_llava_7b --labels outputs/artifact_labels_large200_bbox_solid.csv</code></pre>
+      </section>
+
+      <section id="citation">
+        <h2><span class="n">8</span>Citation</h2>
+        <pre class="bib"><code>@misc{cocoghost2026,
+  title  = {COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal},
+  author = {DIG Lab, University of Alabama at Birmingham},
+  year   = {2026},
+  url    = {https://github.com/DIGlabUAB/coco-ghost-guard}
+}</code></pre>
+      </section>
     </main>
+
+    <footer>
+      <span>COCO-Ghost + GHOST-Guard · DIG Lab UAB · 2026</span>
+      <span><a href="https://github.com/DIGlabUAB/coco-ghost-guard">Code</a> · <a href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Results</a> · <a href="#top">back to top</a></span>
+    </footer>
   </body>
 </html>
