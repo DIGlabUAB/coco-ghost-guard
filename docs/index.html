@@ -10,7 +10,7 @@
     <meta property="og:type" content="article" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400..700&family=Spline+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -31,7 +31,10 @@
       <div class="header">
         <span class="eyebrow">Vision-language model reliability · COCO counterfactuals</span>
         <h1 class="title">COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal</h1>
-        <p class="authors">Anusha Kanagala, M.S. · Dhiral Panjwani, M.S. · Rubin Pillay, M.D. · Leon Jololian, Ph.D. · Sandeep Bodduluri, M.S., Ph.D.</p>
+        <div class="byline" aria-label="Authors">
+          <span>Authors</span>
+          <p class="authors">Anusha Kanagala, M.S. · Dhiral Panjwani, M.S. · Rubin Pillay, M.D. · Leon Jololian, Ph.D. · Sandeep Bodduluri, M.S., Ph.D.</p>
+        </div>
         <p class="venue">Project page · June 2026 · open code, cached outputs, and reproducible local runs</p>
         <p class="lead">
           COCO-Ghost asks a blunt visual question: if the target object is removed by a conservative occlusion, does a VLM still say it is visible? GHOST-Guard is a black-box evidence gate that abstains when the claim survives removal.
@@ -43,6 +46,92 @@
           <a class="btn ghost" href="#reproduce">Reproduce</a>
         </div>
       </div>
+
+      <section id="animation" class="pipeline-hero" aria-label="Animated COCO-Ghost pipeline">
+        <div class="anim-copy">
+          <span class="kicker">The benchmark in one loop</span>
+          <h2 class="story-h">A claim is trusted only if it disappears when its visual evidence is removed</h2>
+          <p class="story-sub">
+            COCO-Ghost builds three views of the same instance. GHOST-Guard accepts object presence when original and crop agree, then abstains if the masked counterfactual still triggers the same object claim.
+          </p>
+        </div>
+        <div class="pipeline-stage">
+          <svg viewBox="0 0 980 380" role="img" aria-label="Animated pipeline from COCO image views to VLM answers and GHOST-Guard decision">
+            <defs>
+              <linearGradient id="softPanel" x1="0" x2="1">
+                <stop offset="0" stop-color="#f7fbf9" />
+                <stop offset="1" stop-color="#ffffff" />
+              </linearGradient>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M0,0 L8,4 L0,8 Z" fill="#78918b"></path>
+              </marker>
+            </defs>
+
+            <text class="svg-title" x="38" y="42">Counterfactual evidence gate</text>
+            <text class="svg-sub" x="38" y="66">same target object · three views · one black-box VLM · abstain when belief persists</text>
+
+            <g class="view-card" transform="translate(38 102)">
+              <rect width="172" height="92" rx="14"></rect>
+              <text class="card-label" x="18" y="27">original</text>
+              <rect class="image-box" x="18" y="42" width="136" height="32" rx="6"></rect>
+              <circle class="object-dot" cx="119" cy="58" r="9"></circle>
+            </g>
+            <g class="view-card" transform="translate(38 212)">
+              <rect width="172" height="92" rx="14"></rect>
+              <text class="card-label" x="18" y="27">object crop</text>
+              <rect class="image-box" x="56" y="39" width="62" height="38" rx="6"></rect>
+              <circle class="object-dot" cx="87" cy="58" r="10"></circle>
+            </g>
+            <g class="view-card" transform="translate(38 322)">
+              <rect width="172" height="42" rx="14"></rect>
+              <text class="card-label" x="18" y="27">masked counterfactual</text>
+            </g>
+            <g class="view-card masked-card" transform="translate(226 322)">
+              <rect width="146" height="42" rx="14"></rect>
+              <rect class="mask-block" x="24" y="13" width="98" height="16" rx="4"></rect>
+            </g>
+
+            <path class="flow-line" d="M222 148 C300 148 322 158 380 178" marker-end="url(#arrow)"></path>
+            <path class="flow-line" d="M222 258 C300 258 322 238 380 218" marker-end="url(#arrow)"></path>
+            <path class="flow-line" d="M380 343 C432 328 454 274 470 240" marker-end="url(#arrow)"></path>
+
+            <circle class="flow-dot dot-one" r="6"></circle>
+            <circle class="flow-dot dot-two" r="6"></circle>
+            <circle class="flow-dot dot-three" r="6"></circle>
+
+            <g class="vlm-node" transform="translate(410 136)">
+              <rect width="190" height="124" rx="18"></rect>
+              <text class="node-title" x="95" y="35" text-anchor="middle">local VLM</text>
+              <text class="node-sub" x="95" y="61" text-anchor="middle">strict visible-pixels prompt</text>
+              <text class="json-line yes-one" x="34" y="92">original: YES</text>
+              <text class="json-line yes-two" x="34" y="112">crop: YES</text>
+            </g>
+
+            <g class="mask-answer" transform="translate(626 150)">
+              <rect width="138" height="42" rx="12"></rect>
+              <text x="69" y="27" text-anchor="middle">masked: NO</text>
+            </g>
+            <g class="mask-answer ghost" transform="translate(626 206)">
+              <rect width="138" height="42" rx="12"></rect>
+              <text x="69" y="27" text-anchor="middle">masked: YES</text>
+            </g>
+
+            <path class="flow-line guard-a" d="M604 196 C632 196 654 191 678 182" marker-end="url(#arrow)"></path>
+            <path class="flow-line guard-b" d="M604 214 C634 222 654 227 678 228" marker-end="url(#arrow)"></path>
+
+            <g class="guard-node" transform="translate(790 130)">
+              <rect width="154" height="154" rx="20"></rect>
+              <text class="node-title" x="77" y="36" text-anchor="middle">GHOST-Guard</text>
+              <line x1="24" x2="130" y1="56" y2="56"></line>
+              <text class="decision accept" x="77" y="90" text-anchor="middle">ACCEPT</text>
+              <text class="decision abstain" x="77" y="124" text-anchor="middle">ABSTAIN</text>
+            </g>
+
+            <text class="legend good" x="628" y="282">accepted only when evidence disappears</text>
+            <text class="legend bad" x="628" y="306">abstain when object belief survives removal</text>
+          </svg>
+        </div>
+      </section>
 
       <section id="findings" class="story">
         <span class="kicker">Main finding</span>
