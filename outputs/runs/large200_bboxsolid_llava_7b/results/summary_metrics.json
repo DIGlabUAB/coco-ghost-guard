@@ -1,0 +1,50 @@
+[
+  {
+    "metric": "original_yes_rate",
+    "label": "Original YES Rate",
+    "value": 0.43,
+    "n": 200
+  },
+  {
+    "metric": "crop_yes_rate",
+    "label": "Crop YES Rate",
+    "value": 0.605,
+    "n": 200
+  },
+  {
+    "metric": "masked_yes_rate",
+    "label": "Masked YES Rate",
+    "value": 0.145,
+    "n": 200
+  },
+  {
+    "metric": "ghost_object_rate",
+    "label": "Ghost Object Rate",
+    "value": 0.3372093023255814,
+    "n": 200
+  },
+  {
+    "metric": "context_persistence_index",
+    "label": "Context Persistence Index",
+    "value": 0.3372093023255814,
+    "n": 200
+  },
+  {
+    "metric": "guard_acceptance_rate",
+    "label": "GHOST-Guard Acceptance Rate",
+    "value": 0.245,
+    "n": 200
+  },
+  {
+    "metric": "guard_abstention_rate",
+    "label": "GHOST-Guard Abstention Rate",
+    "value": 0.185,
+    "n": 200
+  },
+  {
+    "metric": "prevented_ghost_claim_rate",
+    "label": "Prevented Ghost Claim Rate",
+    "value": 1.0,
+    "n": 200
+  }
+]

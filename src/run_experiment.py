@@ -56,7 +56,7 @@ def main() -> None:
         raise SystemExit("[ERROR] Self-localization mode is planned but not implemented in the first oracle-mask pilot.")
 
     cfg = load_config(args.config)
-    manifest_path = project_path("outputs", "counterfactuals", "manifest.jsonl")
+    manifest_path = project_path(cfg.get("counterfactual", {}).get("output_dir", "outputs/counterfactuals"), "manifest.jsonl")
     out_dir = project_path("outputs", "results")
     ensure_dirs(out_dir)
     if not manifest_path.exists():

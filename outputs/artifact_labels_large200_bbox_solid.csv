@@ -1,0 +1,1001 @@
+sample_id,category_name,masked_path,mask_fill,mask_dilation_pixels,artifact_model,artifact_runtime_seconds,artifact_label,artifact_score,artifact_parse_ok,artifact_rationale,artifact_raw_response
+tennis_racket_444142_654834,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_444142_654834/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.882960796356201,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tennis_racket_369323_656095,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_369323_656095/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.596575021743774,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tennis_racket_203864_657072,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_203864_657072/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.5759148597717285,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the tennis racket is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the tennis racket is no longer visibly present.""
+}"
+tennis_racket_44877_656268,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_44877_656268/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.546032190322876,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tennis_racket_522889_657613,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_522889_657613/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.504528760910034,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the tennis racket is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the tennis racket is no longer visibly present.""
+}"
+tennis_racket_96427_659911,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_96427_659911/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.366481065750122,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+tennis_racket_223182_658520,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_223182_658520/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.2781500816345215,clean_removal,0,True,The tennis racket is completely masked and there are no residual shapes or artifacts that suggest its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The tennis racket is completely masked and there are no residual shapes or artifacts that suggest its presence.""
+}"
+tennis_racket_362716_656978,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_362716_656978/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.360890865325928,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tennis_racket_323496_655580,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_323496_655580/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.24773097038269,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tennis_racket_64523_1482412,tennis racket,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tennis_racket_64523_1482412/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.201751947402954,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the tennis rackets are no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the tennis rackets are no longer visibly present.""
+}"
+baseball_bat_57232_1476315,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_57232_1476315/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.9816510677337646,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+baseball_bat_158227_629940,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_158227_629940/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.239249229431152,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with blur.""
+}"
+baseball_bat_284743_627441,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_284743_627441/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.0669989585876465,clean_removal,0,True,The masked region does not preserve a clear target-object shape or any residual artifact.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape or any residual artifact.""
+}"
+baseball_bat_264968_631256,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_264968_631256/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.282011985778809,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+baseball_bat_254516_628997,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_254516_628997/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.1870410442352295,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+baseball_bat_559547_630703,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_559547_630703/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.2191002368927,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+baseball_bat_491464_629786,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_491464_629786/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.175782203674316,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+baseball_bat_415727_1477477,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_415727_1477477/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.996753215789795,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+baseball_bat_398028_630159,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_398028_630159/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.15160608291626,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+baseball_bat_279714_1475930,baseball bat,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/baseball_bat_279714_1475930/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.136055946350098,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+skateboard_125472_639877,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_125472_639877/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.126632928848267,clean_removal,0,True,"The skateboard is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The skateboard is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.""
+}"
+skateboard_562229_639293,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_562229_639293/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.939052104949951,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object-shaped blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object-shaped blur.""
+}"
+skateboard_279278_640440,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_279278_640440/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.157760143280029,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+skateboard_489924_639066,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_489924_639066/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.908719062805176,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+skateboard_300842_643418,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_300842_643418/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.139564037322998,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+skateboard_563648_1474865,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_563648_1474865/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.126812934875488,clean_removal,0,True,"The skateboard is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The skateboard is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.""
+}"
+skateboard_25096_1474353,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_25096_1474353/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.998159170150757,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+skateboard_72281_643979,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_72281_643979/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.032902956008911,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the skateboard is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the skateboard is not visibly present.""
+}"
+skateboard_161978_1478022,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_161978_1478022/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.00403094291687,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the skateboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the skateboard is no longer visibly present.""
+}"
+skateboard_35197_645628,skateboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/skateboard_35197_645628/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.1386637687683105,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+surfboard_127517_1481509,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_127517_1481509/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.939887046813965,clean_removal,0,True,The surfboard is completely removed and there are no residual shapes or artifacts left.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The surfboard is completely removed and there are no residual shapes or artifacts left.""
+}"
+surfboard_381360_647841,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_381360_647841/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.148133993148804,clean_removal,0,True,"The surfboard is not visibly present, and the masked region does not preserve a clear target-object shape.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The surfboard is not visibly present, and the masked region does not preserve a clear target-object shape.""
+}"
+surfboard_498807_651602,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_498807_651602/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.120263338088989,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.""
+}"
+surfboard_355677_650223,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_355677_650223/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.366682052612305,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a surfboard.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a surfboard.""
+}"
+surfboard_199442_652517,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_199442_652517/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.16816520690918,clean_removal,0,True,"The surfboard is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The surfboard is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.""
+}"
+surfboard_210915_646576,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_210915_646576/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.046650171279907,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.""
+}"
+surfboard_16451_1862621,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_16451_1862621/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.958345890045166,clean_removal,0,True,The surfboard is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The surfboard is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+surfboard_512657_1478181,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_512657_1478181/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.215366363525391,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+surfboard_25228_650483,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_25228_650483/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.1783668994903564,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+surfboard_380711_649219,surfboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/surfboard_380711_649219/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.070278167724609,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the surfboard is no longer visibly present.""
+}"
+fork_75393_1520571,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_75393_1520571/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.217321872711182,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+fork_322959_690753,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_322959_690753/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.447710990905762,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+fork_173371_690999,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_173371_690999/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.2464470863342285,clean_removal,0,True,"The fork is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The fork is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.""
+}"
+fork_17714_689203,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_17714_689203/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.485918998718262,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a fork.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a fork.""
+}"
+fork_533958_688805,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_533958_688805/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.362893104553223,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+fork_265518_689541,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_265518_689541/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.4978649616241455,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a fork.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of a fork.""
+}"
+fork_559513_687555,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_559513_687555/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.485698938369751,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no residual object-shaped blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no residual object-shaped blur.""
+}"
+fork_414638_686732,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_414638_686732/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.475522041320801,clean_removal,0,True,"No fork is present in the image, and there are no residual artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""No fork is present in the image, and there are no residual artifacts that suggest its presence.""
+}"
+fork_376322_687300,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_376322_687300/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.9217588901519775,clean_removal,0,True,"The fork is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The fork is not visibly present in the masked region, and there are no clear residual shapes or evidence of its presence.""
+}"
+fork_104669_691061,fork,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/fork_104669_691061/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.868518114089966,clean_removal,0,True,"The fork is not visibly present in the image, and there are no residual artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The fork is not visibly present in the image, and there are no residual artifacts that suggest its presence.""
+}"
+wine_glass_2157_1500881,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_2157_1500881/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.9570770263671875,clean_removal,0,True,The wine glass is completely masked and there are no residual shapes or artifacts that suggest its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The wine glass is completely masked and there are no residual shapes or artifacts that suggest its presence.""
+}"
+wine_glass_385029_661859,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_385029_661859/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.217712163925171,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the wine glass is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the wine glass is no longer visibly present.""
+}"
+wine_glass_116208_664090,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_116208_664090/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,1.9204280376434326,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+wine_glass_355325_1496798,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_355325_1496798/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,1.8687920570373535,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+wine_glass_25394_661323,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_25394_661323/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.1883301734924316,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.""
+}"
+wine_glass_331817_666044,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_331817_666044/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.473478078842163,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+wine_glass_417632_663280,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_417632_663280/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.578696966171265,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+wine_glass_513041_1497370,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_513041_1497370/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.704524993896484,clean_removal,0,True,The wine glass is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The wine glass is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+wine_glass_541773_667284,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_541773_667284/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.940518856048584,clean_removal,0,True,The wine glass is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The wine glass is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+wine_glass_336053_661055,wine glass,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/wine_glass_336053_661055/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.4029700756073,clean_removal,0,True,The wine glass is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The wine glass is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+laptop_89648_1098172,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_89648_1098172/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.6595468521118164,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_497599_1100722,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_497599_1100722/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.53269100189209,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_134112_1097652,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_134112_1097652/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.5665197372436523,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_435003_1100109,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_435003_1100109/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.6963601112365723,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_80949_1098811,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_80949_1098811/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.8381330966949463,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_529148_1102424,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_529148_1102424/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,7.429469347000122,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the laptop is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the laptop is no longer visibly present.""
+}"
+laptop_342367_2134595,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_342367_2134595/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,7.555320978164673,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_112798_1100364,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_112798_1100364/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.068961143493652,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_553664_1101465,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_553664_1101465/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.245686769485474,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+laptop_287347_1971220,laptop,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/laptop_287347_1971220/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.060153007507324,clean_removal,0,True,No laptop is visibly present or its shape preserved in the masked region.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""No laptop is visibly present or its shape preserved in the masked region.""
+}"
+keyboard_181499_1116028,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_181499_1116028/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.596855878829956,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+keyboard_225757_1114694,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_225757_1114694/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.6583516597747803,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+keyboard_246308_1115126,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_246308_1115126/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.411684036254883,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, indicating the keyboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, indicating the keyboard is no longer visibly present.""
+}"
+keyboard_371677_1115356,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_371677_1115356/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.2498929500579834,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.""
+}"
+keyboard_189820_1975515,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_189820_1975515/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,3.545499086380005,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.""
+}"
+keyboard_127987_1114595,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_127987_1114595/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.567668914794922,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object-shaped blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object-shaped blur.""
+}"
+keyboard_426241_1117332,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_426241_1117332/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.082147121429443,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the keyboard is no longer visibly present.""
+}"
+keyboard_360951_1114587,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_360951_1114587/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,8.06237006187439,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly filled with color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly filled with color.""
+}"
+keyboard_195918_1116598,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_195918_1116598/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,7.941956281661987,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+keyboard_226171_1634397,keyboard,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/keyboard_226171_1634397/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,7.566771984100342,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly gray with no discernible object-shaped blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly gray with no discernible object-shaped blur.""
+}"
+handbag_554002_1175897,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_554002_1175897/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.677744150161743,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_115245_1837158,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_115245_1837158/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.7618649005889893,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_414510_1172995,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_414510_1172995/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.7714850902557373,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_474293_1430604,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_474293_1430604/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.6997921466827393,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.""
+}"
+handbag_190923_1173865,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_190923_1173865/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.9609577655792236,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_380913_1175799,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_380913_1175799/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.965496778488159,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_70254_1178097,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_70254_1178097/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.592153072357178,clean_removal,0,True,"The handbag is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The handbag is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.""
+}"
+handbag_496854_1437646,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_496854_1437646/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.478780269622803,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_520832_1177004,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_520832_1177004/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.181239128112793,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+handbag_153529_1179960,handbag,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/handbag_153529_1179960/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.346400022506714,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_8532_295311,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_8532_295311/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.2959301471710205,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_287527_294950,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_287527_294950/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.213071823120117,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_450075_293642,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_450075_293642/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.256114959716797,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_151657_295651,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_151657_295651/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.2368900775909424,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_20333_295083,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_20333_295083/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,2.085064172744751,clean_removal,0,True,The masked region does not preserve a clear target-object shape or any visual evidence of the tie.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape or any visual evidence of the tie.""
+}"
+tie_166768_293878,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_166768_293878/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.8802490234375,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_18770_295246,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_18770_295246/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.785515069961548,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the tie is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the tie is no longer visibly present.""
+}"
+tie_100428_293635,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_100428_293635/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.752292156219482,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the tie is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the tie is no longer visibly present.""
+}"
+tie_460683_298904,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_460683_298904/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.657197952270508,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+tie_92416_293082,tie,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/tie_92416_293082/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.612688064575195,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_370478_1164368,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_370478_1164368/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.45446515083313,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_286458_1171580,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_286458_1171580/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.257396936416626,clean_removal,0,True,The target object 'backpack' is not visibly present in the masked region.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The target object 'backpack' is not visibly present in the masked region.""
+}"
+backpack_280710_1169208,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_280710_1169208/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.458543300628662,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_415727_1165173,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_415727_1165173/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.351156234741211,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_52996_1415438,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_52996_1415438/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.57720685005188,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_253835_1166713,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_253835_1166713/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.105370998382568,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the backpack is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the backpack is no longer visibly present.""
+}"
+backpack_291791_1169272,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_291791_1169272/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.217694997787476,clean_removal,0,True,The masked region does not preserve a clear target-object shape or any residual artifact.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape or any residual artifact.""
+}"
+backpack_230993_1171589,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_230993_1171589/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.351691007614136,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_55150_1828119,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_55150_1828119/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.323060989379883,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+backpack_568981_1163956,backpack,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/backpack_568981_1163956/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.200419187545776,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_137246_279413,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_137246_279413/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.167088747024536,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the umbrella is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the umbrella is no longer visibly present.""
+}"
+umbrella_132544_282492,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_132544_282492/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.208001136779785,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_238410_1829416,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_238410_1829416/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.134060859680176,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_16228_1425221,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_16228_1425221/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.076637029647827,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_500211_1425751,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_500211_1425751/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.9389612674713135,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+umbrella_530854_284596,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_530854_284596/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.014396905899048,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the umbrella is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the umbrella is no longer visibly present.""
+}"
+umbrella_289741_285880,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_289741_285880/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.900363922119141,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly filled with color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly filled with color.""
+}"
+umbrella_179174_1830214,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_179174_1830214/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.086014747619629,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_163257_282290,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_163257_282290/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.156651020050049,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+umbrella_222991_281667,umbrella,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/umbrella_222991_281667/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.127403020858765,clean_removal,0,True,"The image shows a pair of green boots, and there is no evidence of an umbrella or any object-shaped residual artifact.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The image shows a pair of green boots, and there is no evidence of an umbrella or any object-shaped residual artifact.""
+}"
+bottle_506310_86538,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_506310_86538/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.817419767379761,clean_removal,0,True,The bottle is completely removed and there are no residual shapes or artifacts left.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bottle is completely removed and there are no residual shapes or artifacts left.""
+}"
+bottle_474167_78755,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_474167_78755/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.140937805175781,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+bottle_293625_1483987,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_293625_1483987/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.98606014251709,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+bottle_108253_2096173,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_108253_2096173/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.821650743484497,clean_removal,0,True,The bottle is completely masked and there are no residual shapes or evidence of the object's presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bottle is completely masked and there are no residual shapes or evidence of the object's presence.""
+}"
+bottle_340697_2094250,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_340697_2094250/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.07366418838501,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.""
+}"
+bottle_287347_92761,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_287347_92761/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.010191917419434,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+bottle_422998_83028,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_422998_83028/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.893553256988525,clean_removal,0,True,The bottle is completely masked and there are no residual shapes or artifacts indicating its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bottle is completely masked and there are no residual shapes or artifacts indicating its presence.""
+}"
+bottle_554838_1867939,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_554838_1867939/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.864534616470337,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+bottle_473869_1869187,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_473869_1869187/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.016387939453125,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+bottle_132329_95919,bottle,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bottle_132329_95919/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.974070072174072,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+cup_239627_673697,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_239627_673697/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.985975027084351,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+cup_520871_670685,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_520871_670685/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.068704128265381,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+cup_2431_681708,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_2431_681708/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.016615867614746,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly gray without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly gray without any discernible object.""
+}"
+cup_368752_681157,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_368752_681157/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.007335901260376,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+cup_579655_2214995,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_579655_2214995/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.0012078285217285,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with blur.""
+}"
+cup_535253_1505250,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_535253_1505250/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.596481084823608,clean_removal,0,True,The cup is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The cup is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+cup_192904_682842,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_192904_682842/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.9199419021606445,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+cup_54605_1506712,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_54605_1506712/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.778683185577393,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the cup is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the cup is no longer visibly present.""
+}"
+cup_277689_1880253,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_277689_1880253/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.00920295715332,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a uniform color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a uniform color.""
+}"
+cup_463283_1882094,cup,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cup_463283_1882094/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.773618221282959,clean_removal,0,True,"The cup is not visibly present, and there are no clear residual shapes or evidence of the cup's presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The cup is not visibly present, and there are no clear residual shapes or evidence of the cup's presence.""
+}"
+bowl_305609_710024,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_305609_710024/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.691150188446045,clean_removal,0,True,The bowl is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bowl is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+bowl_397681_711502,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_397681_711502/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.82408595085144,clean_removal,0,True,"The bowl is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bowl is not visibly present in the masked region, and there are no clear residual shapes or artifacts that suggest its presence.""
+}"
+bowl_452084_710019,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_452084_710019/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.215626001358032,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.""
+}"
+bowl_523100_716663,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_523100_716663/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.883068799972534,clean_removal,0,True,The bowl is not visibly present and there are no clear residual shapes or artifacts indicating its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The bowl is not visibly present and there are no clear residual shapes or artifacts indicating its presence.""
+}"
+bowl_322163_1899216,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_322163_1899216/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.014125108718872,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+bowl_331817_1535266,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_331817_1535266/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.9144508838653564,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+bowl_275198_718346,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_275198_718346/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.993026971817017,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.""
+}"
+bowl_224807_1901186,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_224807_1901186/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.258397102355957,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area appears to be filled with a uniform color without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area appears to be filled with a uniform color without any discernible object.""
+}"
+bowl_221872_1902301,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_221872_1902301/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.1963818073272705,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+bowl_578871_1536402,bowl,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/bowl_578871_1536402/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.861239194869995,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the bowl is no longer visibly present.""
+}"
+chair_519569_2189842,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_519569_2189842/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.005238056182861,clean_removal,0,True,The chair is completely removed and there are no residual shapes or artifacts indicating its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The chair is completely removed and there are no residual shapes or artifacts indicating its presence.""
+}"
+chair_277197_109975,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_277197_109975/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.903662204742432,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the chair is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the chair is no longer visibly present.""
+}"
+chair_383386_1931179,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_383386_1931179/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.255314111709595,clean_removal,0,True,"The chair is not visibly present, and there are no clear residual shapes or artifacts indicating its presence.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The chair is not visibly present, and there are no clear residual shapes or artifacts indicating its presence.""
+}"
+chair_326248_376887,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_326248_376887/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.233160972595215,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+chair_189213_1590733,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_189213_1590733/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.898174047470093,clean_removal,0,True,The chair is completely masked and there are no residual shapes or evidence of its presence.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The chair is completely masked and there are no residual shapes or evidence of its presence.""
+}"
+chair_196754_2124119,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_196754_2124119/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.681793689727783,clean_removal,0,True,The image does not show any chair or object-shaped residual artifact.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The image does not show any chair or object-shaped residual artifact.""
+}"
+chair_26465_375692,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_26465_375692/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.969106912612915,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+chair_366141_2124194,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_366141_2124194/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.085712194442749,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly filled with a solid color.""
+}"
+chair_480122_385280,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_480122_385280/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.257724046707153,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the chair is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the chair is no longer visibly present.""
+}"
+chair_571718_1596959,chair,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/chair_571718_1596959/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.270682096481323,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with blur.""
+}"
+cell_phone_99428_326781,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_99428_326781/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.85976505279541,clean_removal,0,True,The image shows a laptop with no visible cell phone or object-shaped blur.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The image shows a laptop with no visible cell phone or object-shaped blur.""
+}"
+cell_phone_194724_1638925,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_194724_1638925/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,4.953477144241333,clean_removal,0,True,The masked area does not preserve any clear shape or evidence of a cell phone.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked area does not preserve any clear shape or evidence of a cell phone.""
+}"
+cell_phone_26465_324735,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_26465_324735/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.030677795410156,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a solid color.""
+}"
+cell_phone_42528_328787,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_42528_328787/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.174242734909058,clean_removal,0,True,The masked region does not preserve a clear target-object shape or any visual evidence of the cell phone.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape or any visual evidence of the cell phone.""
+}"
+cell_phone_343706_322768,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_343706_322768/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.401670932769775,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly gray without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly gray without any discernible object.""
+}"
+cell_phone_59598_321639,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_59598_321639/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.280458927154541,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, indicating the cell phone has been successfully removed.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, indicating the cell phone has been successfully removed.""
+}"
+cell_phone_396729_322835,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_396729_322835/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.207219839096069,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with blur.""
+}"
+cell_phone_76416_325906,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_76416_325906/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.40315318107605,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with a uniform gray color.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with a uniform gray color.""
+}"
+cell_phone_326541_325236,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_326541_325236/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.247254848480225,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+cell_phone_146489_323423,cell phone,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/cell_phone_146489_323423/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.131946802139282,clean_removal,0,True,The masked area does not preserve a clear target-object shape or any residual object-shaped blur.,"{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked area does not preserve a clear target-object shape or any residual object-shaped blur.""
+}"
+book_507575_1140358,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_507575_1140358/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.286818027496338,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+book_58111_1149796,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_58111_1149796/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.511060953140259,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of an object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no residual artifact that suggests the presence of an object.""
+}"
+book_25603_1144688,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_25603_1144688/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.416764974594116,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+book_183049_1655182,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_183049_1655182/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.417450904846191,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.""
+}"
+book_520077_1144329,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_520077_1144329/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.517534971237183,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly dark with no discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly dark with no discernible object.""
+}"
+book_326970_1141750,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_326970_1141750/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.388659954071045,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.""
+}"
+book_476810_1147902,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_476810_1147902/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.481513023376465,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there are no faint or ambiguous object-shaped blur remains.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there are no faint or ambiguous object-shaped blur remains.""
+}"
+book_147415_1988032,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_147415_1988032/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.2891881465911865,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the book is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the book is no longer visibly present.""
+}"
+book_96001_1137334,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_96001_1137334/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.622611045837402,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+book_367569_1144185,book,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/book_367569_1144185/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.610018968582153,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area appears uniformly blurred without any discernible object.""
+}"
+clock_217425_340871,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_217425_340871/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.38285493850708,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is filled with blur.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is filled with blur.""
+}"
+clock_409542_339051,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_409542_339051/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.662502765655518,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.""
+}"
+clock_343149_336308,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_343149_336308/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.426554918289185,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, indicating the clock has been completely removed.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, indicating the clock has been completely removed.""
+}"
+clock_60363_337109,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_60363_337109/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.707721948623657,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+clock_140929_338838,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_140929_338838/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.708616018295288,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+clock_427055_336539,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_427055_336539/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.669010877609253,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the area is uniformly blurred without any discernible object.""
+}"
+clock_344614_333922,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_344614_333922/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.6602959632873535,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.""
+}"
+clock_565989_333986,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_565989_333986/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.511835813522339,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, indicating the clock is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, indicating the clock is no longer visibly present.""
+}"
+clock_304396_335489,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_304396_335489/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,6.03147292137146,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.""
+}"
+clock_154339_1664180,clock,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/clock_154339_1664180/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.6185290813446045,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the clock is no longer visibly present.""
+}"
+vase_521509_1669434,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_521509_1669434/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.851111888885498,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.""
+}"
+vase_111951_1668834,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_111951_1668834/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.725823163986206,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+vase_370042_1156815,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_370042_1156815/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.638684988021851,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+vase_512194_1157219,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_512194_1157219/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.835988759994507,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.""
+}"
+vase_429530_1994424,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_429530_1994424/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.639588832855225,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+vase_557916_1669044,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_557916_1669044/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.7846269607543945,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"
+vase_97585_1992818,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_97585_1992818/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.5727317333221436,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+vase_421923_1153529,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_421923_1153529/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.655447006225586,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the object itself is not visibly present.""
+}"
+vase_161397_1154965,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_161397_1154965/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.609760999679565,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and the vase is no longer visibly present.""
+}"
+vase_473869_1151302,vase,/Users/boddu/Documents/govinda/codex/COCOGhost/outputs/counterfactuals_large200_bbox_solid/vase_473869_1151302/masked.jpg,solid_local_mean,0,qwen2.5vl:7b,5.776806116104126,clean_removal,0,True,"The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.","{
+  ""artifact_label"": ""clean_removal"",
+  ""artifact_score"": 0,
+  ""rationale"": ""The masked region does not preserve a clear target-object shape, and there is no faint or ambiguous object-shaped blur remaining.""
+}"

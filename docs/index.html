@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COCO-Ghost + GHOST-Guard</title>
-    <meta name="description" content="Counterfactual evidence gating for context-induced object hallucination in local vision-language models.">
+    <meta name="description" content="Audited counterfactual evidence gating for context-induced object hallucination in local vision-language models.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -19,10 +19,10 @@
       </nav>
       <div class="hero-grid">
         <section class="hero-copy">
-          <p class="eyebrow">Local VLM reliability · COCO counterfactuals · black-box abstention</p>
-          <h1>Does an object claim survive after the object is visually removed?</h1>
+          <p class="eyebrow">Audited COCO counterfactuals · local VLMs · black-box abstention</p>
+          <h1>Does an object claim survive after the object evidence is removed?</h1>
           <p class="lead">
-            COCO-Ghost creates object-removed counterfactual images from COCO masks. GHOST-Guard accepts an object-presence claim only when the claim is supported by the original image, localized crop, and disappears after masking.
+            COCO-Ghost tests whether VLM object-presence claims persist under conservative bbox occlusion. GHOST-Guard accepts a claim only when the original image and crop support it, and the claim disappears after removal.
           </p>
           <div class="cta-row">
             <a class="button primary" href="https://github.com/DIGlabUAB/coco-ghost-guard">View Repository</a>
@@ -31,16 +31,16 @@
         </section>
         <section class="metric-panel" aria-label="Key experiment results">
           <div>
-            <span class="metric">450</span>
+            <span class="metric">1,800</span>
             <span class="label">local VLM calls</span>
           </div>
           <div>
-            <span class="metric">3</span>
-            <span class="label">Ollama VLMs</span>
+            <span class="metric">200</span>
+            <span class="label">clean-removal COCO instances</span>
           </div>
           <div>
-            <span class="metric">84.0%</span>
-            <span class="label">ghost rate on Qwen2.5-VL 7B</span>
+            <span class="metric">51.6%</span>
+            <span class="label">clean ghost rate on Qwen2.5-VL 7B</span>
           </div>
           <div>
             <span class="metric">0.0%</span>
@@ -53,8 +53,11 @@
     <main>
       <section id="results" class="section">
         <div class="section-head">
-          <p class="eyebrow">Expanded local experiment</p>
-          <h2>Three local VLMs, same 50 counterfactual object-removal cases</h2>
+          <p class="eyebrow">Scaled clean-removal experiment</p>
+          <h2>Three local VLMs, same 200 audited occlusion counterfactuals</h2>
+          <p>
+            The scaled run uses padded bounding-box occlusion with solid local-mean fill. All 200 removals were labeled clean, so the headline ghost rates are not driven by visible object-shaped blur.
+          </p>
         </div>
         <div class="table-wrap">
           <table>
@@ -62,8 +65,9 @@
               <tr>
                 <th>Model</th>
                 <th>Original YES</th>
+                <th>Crop YES</th>
                 <th>Masked YES</th>
-                <th>Ghost Rate</th>
+                <th>Clean Ghost Rate</th>
                 <th>Guard Accept</th>
                 <th>Guard Abstain</th>
               </tr>
@@ -71,27 +75,30 @@
             <tbody>
               <tr>
                 <td>qwen2.5vl:7b</td>
-                <td>100.0%</td>
-                <td>84.0%</td>
-                <td>84.0%</td>
-                <td>16.0%</td>
-                <td>84.0%</td>
+                <td>96.0%</td>
+                <td>94.5%</td>
+                <td>49.5%</td>
+                <td>51.6%</td>
+                <td>44.5%</td>
+                <td>51.5%</td>
               </tr>
               <tr>
                 <td>qwen2.5vl:3b</td>
-                <td>92.0%</td>
-                <td>74.0%</td>
-                <td>78.3%</td>
-                <td>14.0%</td>
-                <td>78.0%</td>
+                <td>88.5%</td>
+                <td>80.0%</td>
+                <td>43.0%</td>
+                <td>47.5%</td>
+                <td>30.0%</td>
+                <td>58.5%</td>
               </tr>
               <tr>
                 <td>llava:7b</td>
-                <td>52.0%</td>
-                <td>32.0%</td>
-                <td>61.5%</td>
-                <td>18.0%</td>
-                <td>34.0%</td>
+                <td>43.0%</td>
+                <td>60.5%</td>
+                <td>14.5%</td>
+                <td>33.7%</td>
+                <td>24.5%</td>
+                <td>18.5%</td>
               </tr>
             </tbody>
           </table>
@@ -106,12 +113,12 @@
           <p class="eyebrow">Safety wrapper behavior</p>
           <h2>Crop evidence alone is not enough</h2>
           <p>
-            A crop-only gate confirms that the object can be recognized locally, but it does not test whether the claim disappears after removal. In the expanded runs, crop-gating still accepted most ghost claims. GHOST-Guard adds the masked counterfactual check and abstains when object belief persists.
+            A crop-only gate checks local recognizability, but it does not test whether an object claim disappears after the object is removed. On Qwen2.5-VL 7B, crop-gating still accepted 51.4% ghost claims. GHOST-Guard adds the masked counterfactual check and accepts 0.0% detected ghost claims.
           </p>
         </div>
         <div class="callout">
-          <p class="callout-title">Baseline finding</p>
-          <p>For qwen2.5vl:7b, crop-gating accepted 83.3% ghost claims. GHOST-Guard accepted 0.0% by converting those cases to UNSURE.</p>
+          <p class="callout-title">Main finding</p>
+          <p>Even under clean bbox occlusion, local VLMs still report removed objects in 33.7% to 51.6% of originally recognized cases.</p>
         </div>
       </section>
 
@@ -124,17 +131,17 @@
           <article>
             <span>1</span>
             <h3>Select COCO instances</h3>
-            <p>Sample target object categories with usable segmentation masks and moderate object area.</p>
+            <p>Sample target object categories with usable annotations and moderate object area.</p>
           </article>
           <article>
             <span>2</span>
             <h3>Create three views</h3>
-            <p>Save original, object crop, and masked image with the target object region replaced by blurred local pixels.</p>
+            <p>Save original, object crop, and bbox-occluded image with the target region replaced by local-mean color.</p>
           </article>
           <article>
             <span>3</span>
-            <h3>Query local VLMs</h3>
-            <p>Ask the same strict object-presence question through Ollama and preserve all raw responses.</p>
+            <h3>Audit removals</h3>
+            <p>Label counterfactual quality and report clean-removal results separately from artifact-prone cases.</p>
           </article>
           <article>
             <span>4</span>
@@ -147,13 +154,13 @@
       <section class="section">
         <div class="section-head">
           <p class="eyebrow">Qualitative examples</p>
-          <h2>Object claims can persist after visual evidence removal</h2>
+          <h2>The stricter mask removes the silhouette objection</h2>
         </div>
         <figure class="figure tall">
-          <img src="assets/example_contact_sheet.png" alt="Contact sheet showing original, crop, and masked counterfactual examples with VLM answers.">
+          <img src="assets/example_contact_sheet.png" alt="Contact sheet showing original, crop, and bbox-occluded counterfactual examples with VLM answers.">
         </figure>
         <p class="note">
-          Some masked regions leave object-shaped blur artifacts. The benchmark treats this as an explicit artifact-audit issue and reports COCO-Ghost as a counterfactual stress test rather than proof that every masked-image YES is purely contextual.
+          Earlier blur-fill masks preserved object-shaped residuals in some examples. The scaled headline therefore uses bbox-solid occlusion and reports artifact labels, trading realism for a cleaner evidence test.
         </p>
       </section>
     </main>

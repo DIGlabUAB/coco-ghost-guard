@@ -1,0 +1,32 @@
+{
+  "run_name": "large200_bboxsolid_qwen2_5vl_7b",
+  "created_at_utc": "2026-06-24T14:24:45.374116+00:00",
+  "config_path": "config/large_200_qwen2_5vl_7b.yaml",
+  "model": "qwen2.5vl:7b",
+  "split": "val2017",
+  "max_images_per_category": 10,
+  "categories": [
+    "tennis racket",
+    "baseball bat",
+    "skateboard",
+    "surfboard",
+    "fork",
+    "wine glass",
+    "laptop",
+    "keyboard",
+    "handbag",
+    "tie",
+    "backpack",
+    "umbrella",
+    "bottle",
+    "cup",
+    "bowl",
+    "chair",
+    "cell phone",
+    "book",
+    "clock",
+    "vase"
+  ],
+  "samples": 200,
+  "view_answers": 600
+}

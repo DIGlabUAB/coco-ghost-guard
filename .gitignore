@@ -10,7 +10,9 @@ data/selected/images/
 
 outputs/.cache/
 outputs/.mplconfig/
-outputs/counterfactuals/
+outputs/pycache/
+outputs/counterfactuals*/
 outputs/results/
 outputs/figures/
 outputs/reports/
+outputs/artifact_labels.csv

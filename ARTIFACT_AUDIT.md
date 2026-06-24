@@ -1,38 +1,56 @@
 # Artifact Audit Notes
 
-This is a first-pass visual audit of the expanded run artifacts. It is not a complete human annotation pass.
+The artifact audit changed the direction of the project.
 
-## What Looks Good
+The first expanded runs used COCO segmentation masks filled with blurred local pixels. Those counterfactuals were easy to reproduce, but visual inspection showed a serious problem: blur-fill regions often preserved the target object's silhouette. In those cases, a masked-image `YES` response may reflect residual visual evidence rather than pure context-induced persistence.
 
-- The counterfactual construction is simple and reproducible: COCO instance mask plus blurred local fill.
-- The original/crop/masked contact sheets render correctly.
-- Several examples clearly show the intended phenomenon: the target object is removed or heavily obscured, but the model still answers `YES`.
+## Revised Scaled Intervention
 
-## Main Caveat
+For the scaled experiments, COCO-Ghost now uses:
 
-Some masked regions leave object-shaped blurred patches. This is expected from blur-fill masking, but it matters for interpretation:
+- `mask_shape: bbox`
+- `bbox_removal_margin_fraction: 0.12`
+- `mask_fill: solid_local_mean`
+- `mask_dilation_pixels: 0`
 
-- If the masked patch preserves the shape of a racket, bat, fork, or glass, the model may be responding to the residual silhouette rather than pure scene context.
-- These cases should be treated as possible counterfactual artifacts.
-- The paper should not claim every masked-image `YES` is definitely caused by scene priors.
+This removes a padded bounding-box region rather than the exact segmentation silhouette. It is less naturalistic, but it better answers the evidence question because it avoids leaving target-shaped blur.
+
+The scaled paper framing should call this an **occlusion counterfactual**, not natural inpainting.
+
+## Scaled Artifact Labels
+
+The 200-sample bbox-solid counterfactual set was labeled with the artifact-labeling pipeline:
+
+| Label | Count |
+|---|---:|
+| `clean_removal` | 200 |
+
+Because all 200 scaled samples were labeled clean, the main results and clean-removal results are identical:
+
+| Model | Clean Ghost Rate |
+|---|---:|
+| `qwen2.5vl:7b` | 51.6% |
+| `qwen2.5vl:3b` | 47.5% |
+| `llava:7b` | 33.7% |
 
 ## Recommended Paper Language
 
 Use:
 
-> Masked-image YES responses may reflect either context-induced persistence or residual evidence from object-shaped masking artifacts. We therefore report COCO-Ghost as a counterfactual stress test and include qualitative artifact inspection as part of the evaluation.
+> We report scaled results on a conservative bbox-occlusion counterfactual set. This intervention is visually less natural than inpainting, but it removes object-shaped residuals and makes the measured effect harder to attribute to silhouette leakage.
+
+Also use:
+
+> Earlier blur-fill segmentation counterfactuals produced higher ghost rates, but because the blur can preserve target shape, we treat them as an ablation and use artifact-labeled bbox occlusion for the headline results.
 
 Avoid:
 
 > Every masked-image YES is a hallucination.
 
-## Next Audit Step
+Avoid:
 
-Before submission, add a manual artifact label for each sample:
+> The counterfactual images are photorealistic object removals.
 
-- `clean_removal`
-- `minor_residual_shape`
-- `major_residual_shape`
-- `object_still_visible`
+## Why This Matters
 
-Then report Ghost Object Rate both overall and on `clean_removal` examples only.
+The benchmark is stronger when it is honest about the intervention. The goal is not to make a perfect edited image; the goal is to ask whether the model's object claim depends on visible object evidence. A blunt but clean occlusion is a defensible stress test for that question.

@@ -1,0 +1,201 @@
+sample_id,category_name,original_answer,crop_answer,masked_answer,ghost_flag,evidence_supported,final_answer,risk,guard_accept,guard_abstain
+tennis_racket_444142_654834,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_369323_656095,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_203864_657072,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_44877_656268,tennis racket,NO,YES,NO,False,True,NO,none,False,False
+tennis_racket_522889_657613,tennis racket,YES,YES,NO,False,True,YES,low,True,False
+tennis_racket_96427_659911,tennis racket,NO,YES,NO,False,True,NO,none,False,False
+tennis_racket_223182_658520,tennis racket,NO,YES,NO,False,True,NO,none,False,False
+tennis_racket_362716_656978,tennis racket,NO,YES,NO,False,True,NO,none,False,False
+tennis_racket_323496_655580,tennis racket,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+tennis_racket_64523_1482412,tennis racket,NO,NO,NO,False,False,NO,none,False,False
+baseball_bat_57232_1476315,baseball bat,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+baseball_bat_158227_629940,baseball bat,NO,YES,NO,False,True,NO,none,False,False
+baseball_bat_284743_627441,baseball bat,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+baseball_bat_264968_631256,baseball bat,NO,NO,NO,False,False,NO,none,False,False
+baseball_bat_254516_628997,baseball bat,NO,YES,NO,False,True,NO,none,False,False
+baseball_bat_559547_630703,baseball bat,NO,NO,NO,False,False,NO,none,False,False
+baseball_bat_491464_629786,baseball bat,NO,NO,NO,False,False,NO,none,False,False
+baseball_bat_415727_1477477,baseball bat,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+baseball_bat_398028_630159,baseball bat,NO,YES,NO,False,True,NO,none,False,False
+baseball_bat_279714_1475930,baseball bat,NO,NO,NO,False,False,NO,none,False,False
+skateboard_125472_639877,skateboard,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+skateboard_562229_639293,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_279278_640440,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_489924_639066,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_300842_643418,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_563648_1474865,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+skateboard_25096_1474353,skateboard,NO,NO,NO,False,False,NO,none,False,False
+skateboard_72281_643979,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+skateboard_161978_1478022,skateboard,YES,YES,NO,False,True,YES,low,True,False
+skateboard_35197_645628,skateboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+surfboard_127517_1481509,surfboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+surfboard_381360_647841,surfboard,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+surfboard_498807_651602,surfboard,YES,YES,NO,False,True,YES,low,True,False
+surfboard_355677_650223,surfboard,NO,NO,NO,False,False,NO,none,False,False
+surfboard_199442_652517,surfboard,YES,YES,NO,False,True,YES,low,True,False
+surfboard_210915_646576,surfboard,YES,YES,NO,False,True,YES,low,True,False
+surfboard_16451_1862621,surfboard,YES,YES,NO,False,True,YES,low,True,False
+surfboard_512657_1478181,surfboard,NO,NO,NO,False,False,NO,none,False,False
+surfboard_25228_650483,surfboard,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+surfboard_380711_649219,surfboard,YES,YES,NO,False,True,YES,low,True,False
+fork_75393_1520571,fork,NO,NO,NO,False,False,NO,none,False,False
+fork_322959_690753,fork,NO,YES,NO,False,True,NO,none,False,False
+fork_173371_690999,fork,NO,NO,NO,False,False,NO,none,False,False
+fork_17714_689203,fork,NO,YES,NO,False,True,NO,none,False,False
+fork_533958_688805,fork,NO,YES,NO,False,True,NO,none,False,False
+fork_265518_689541,fork,NO,NO,NO,False,False,NO,none,False,False
+fork_559513_687555,fork,NO,NO,NO,False,False,NO,none,False,False
+fork_414638_686732,fork,NO,YES,NO,False,True,NO,none,False,False
+fork_376322_687300,fork,NO,NO,NO,False,False,NO,none,False,False
+fork_104669_691061,fork,NO,NO,NO,False,False,NO,none,False,False
+wine_glass_2157_1500881,wine glass,NO,YES,NO,False,True,NO,none,False,False
+wine_glass_385029_661859,wine glass,YES,YES,NO,False,True,YES,low,True,False
+wine_glass_116208_664090,wine glass,NO,YES,NO,False,True,NO,none,False,False
+wine_glass_355325_1496798,wine glass,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+wine_glass_25394_661323,wine glass,NO,YES,NO,False,True,NO,none,False,False
+wine_glass_331817_666044,wine glass,NO,NO,NO,False,False,NO,none,False,False
+wine_glass_417632_663280,wine glass,NO,YES,NO,False,True,NO,none,False,False
+wine_glass_513041_1497370,wine glass,YES,YES,NO,False,True,YES,low,True,False
+wine_glass_541773_667284,wine glass,NO,YES,NO,False,True,NO,none,False,False
+wine_glass_336053_661055,wine glass,NO,NO,NO,False,False,NO,none,False,False
+laptop_89648_1098172,laptop,NO,YES,NO,False,True,NO,none,False,False
+laptop_497599_1100722,laptop,NO,YES,NO,False,True,NO,none,False,False
+laptop_134112_1097652,laptop,YES,YES,NO,False,True,YES,low,True,False
+laptop_435003_1100109,laptop,YES,YES,NO,False,True,YES,low,True,False
+laptop_80949_1098811,laptop,YES,YES,NO,False,True,YES,low,True,False
+laptop_529148_1102424,laptop,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+laptop_342367_2134595,laptop,NO,YES,NO,False,True,NO,none,False,False
+laptop_112798_1100364,laptop,NO,YES,NO,False,True,NO,none,False,False
+laptop_553664_1101465,laptop,YES,YES,NO,False,True,YES,low,True,False
+laptop_287347_1971220,laptop,NO,NO,NO,False,False,NO,none,False,False
+keyboard_181499_1116028,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_225757_1114694,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_246308_1115126,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_371677_1115356,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_189820_1975515,keyboard,NO,YES,NO,False,True,NO,none,False,False
+keyboard_127987_1114595,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_426241_1117332,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_360951_1114587,keyboard,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+keyboard_195918_1116598,keyboard,YES,YES,NO,False,True,YES,low,True,False
+keyboard_226171_1634397,keyboard,YES,YES,NO,False,True,YES,low,True,False
+handbag_554002_1175897,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_115245_1837158,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_414510_1172995,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_474293_1430604,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_190923_1173865,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_380913_1175799,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_70254_1178097,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_496854_1437646,handbag,NO,YES,NO,False,True,NO,none,False,False
+handbag_520832_1177004,handbag,NO,NO,NO,False,False,NO,none,False,False
+handbag_153529_1179960,handbag,NO,NO,NO,False,False,NO,none,False,False
+tie_8532_295311,tie,NO,YES,NO,False,True,NO,none,False,False
+tie_287527_294950,tie,NO,YES,NO,False,True,NO,none,False,False
+tie_450075_293642,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_151657_295651,tie,NO,YES,NO,False,True,NO,none,False,False
+tie_20333_295083,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_166768_293878,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_18770_295246,tie,NO,YES,NO,False,True,NO,none,False,False
+tie_100428_293635,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_460683_298904,tie,YES,YES,NO,False,True,YES,low,True,False
+tie_92416_293082,tie,YES,YES,NO,False,True,YES,low,True,False
+backpack_370478_1164368,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_286458_1171580,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_280710_1169208,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_415727_1165173,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_52996_1415438,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_253835_1166713,backpack,NO,YES,NO,False,True,NO,none,False,False
+backpack_291791_1169272,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_230993_1171589,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_55150_1828119,backpack,NO,NO,NO,False,False,NO,none,False,False
+backpack_568981_1163956,backpack,NO,NO,NO,False,False,NO,none,False,False
+umbrella_137246_279413,umbrella,YES,YES,NO,False,True,YES,low,True,False
+umbrella_132544_282492,umbrella,NO,YES,NO,False,True,NO,none,False,False
+umbrella_238410_1829416,umbrella,NO,NO,NO,False,False,NO,none,False,False
+umbrella_16228_1425221,umbrella,NO,YES,NO,False,True,NO,none,False,False
+umbrella_500211_1425751,umbrella,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+umbrella_530854_284596,umbrella,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+umbrella_289741_285880,umbrella,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+umbrella_179174_1830214,umbrella,NO,NO,NO,False,False,NO,none,False,False
+umbrella_163257_282290,umbrella,NO,NO,NO,False,False,NO,none,False,False
+umbrella_222991_281667,umbrella,YES,YES,NO,False,True,YES,low,True,False
+bottle_506310_86538,bottle,NO,YES,NO,False,True,NO,none,False,False
+bottle_474167_78755,bottle,NO,YES,NO,False,True,NO,none,False,False
+bottle_293625_1483987,bottle,NO,NO,NO,False,False,NO,none,False,False
+bottle_108253_2096173,bottle,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+bottle_340697_2094250,bottle,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+bottle_287347_92761,bottle,NO,YES,NO,False,True,NO,none,False,False
+bottle_422998_83028,bottle,NO,YES,NO,False,True,NO,none,False,False
+bottle_554838_1867939,bottle,NO,NO,NO,False,False,NO,none,False,False
+bottle_473869_1869187,bottle,NO,YES,NO,False,True,NO,none,False,False
+bottle_132329_95919,bottle,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+cup_239627_673697,cup,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+cup_520871_670685,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_2431_681708,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_368752_681157,cup,NO,YES,NO,False,True,NO,none,False,False
+cup_579655_2214995,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_535253_1505250,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_192904_682842,cup,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+cup_54605_1506712,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_277689_1880253,cup,NO,NO,NO,False,False,NO,none,False,False
+cup_463283_1882094,cup,NO,NO,NO,False,False,NO,none,False,False
+bowl_305609_710024,bowl,YES,YES,NO,False,True,YES,low,True,False
+bowl_397681_711502,bowl,NO,YES,NO,False,True,NO,none,False,False
+bowl_452084_710019,bowl,NO,NO,NO,False,False,NO,none,False,False
+bowl_523100_716663,bowl,YES,YES,NO,False,True,YES,low,True,False
+bowl_322163_1899216,bowl,NO,YES,NO,False,True,NO,none,False,False
+bowl_331817_1535266,bowl,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+bowl_275198_718346,bowl,NO,YES,NO,False,True,NO,none,False,False
+bowl_224807_1901186,bowl,NO,NO,NO,False,False,NO,none,False,False
+bowl_221872_1902301,bowl,NO,YES,NO,False,True,NO,none,False,False
+bowl_578871_1536402,bowl,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+chair_519569_2189842,chair,NO,NO,NO,False,False,NO,none,False,False
+chair_277197_109975,chair,NO,YES,NO,False,True,NO,none,False,False
+chair_383386_1931179,chair,NO,YES,NO,False,True,NO,none,False,False
+chair_326248_376887,chair,NO,YES,NO,False,True,NO,none,False,False
+chair_189213_1590733,chair,NO,NO,NO,False,False,NO,none,False,False
+chair_196754_2124119,chair,NO,NO,NO,False,False,NO,none,False,False
+chair_26465_375692,chair,NO,NO,NO,False,False,NO,none,False,False
+chair_366141_2124194,chair,YES,YES,NO,False,True,YES,low,True,False
+chair_480122_385280,chair,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+chair_571718_1596959,chair,NO,NO,NO,False,False,NO,none,False,False
+cell_phone_99428_326781,cell phone,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+cell_phone_194724_1638925,cell phone,NO,YES,NO,False,True,NO,none,False,False
+cell_phone_26465_324735,cell phone,YES,NO,NO,False,False,UNSURE,weak_visual_evidence,False,True
+cell_phone_42528_328787,cell phone,YES,YES,NO,False,True,YES,low,True,False
+cell_phone_343706_322768,cell phone,YES,YES,NO,False,True,YES,low,True,False
+cell_phone_59598_321639,cell phone,NO,YES,NO,False,True,NO,none,False,False
+cell_phone_396729_322835,cell phone,YES,YES,NO,False,True,YES,low,True,False
+cell_phone_76416_325906,cell phone,NO,NO,NO,False,False,NO,none,False,False
+cell_phone_326541_325236,cell phone,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+cell_phone_146489_323423,cell phone,NO,NO,NO,False,False,NO,none,False,False
+book_507575_1140358,book,NO,NO,NO,False,False,NO,none,False,False
+book_58111_1149796,book,NO,YES,NO,False,True,NO,none,False,False
+book_25603_1144688,book,NO,YES,NO,False,True,NO,none,False,False
+book_183049_1655182,book,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+book_520077_1144329,book,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+book_326970_1141750,book,NO,NO,NO,False,False,NO,none,False,False
+book_476810_1147902,book,NO,YES,NO,False,True,NO,none,False,False
+book_147415_1988032,book,NO,NO,NO,False,False,NO,none,False,False
+book_96001_1137334,book,NO,YES,NO,False,True,NO,none,False,False
+book_367569_1144185,book,NO,NO,NO,False,False,NO,none,False,False
+clock_217425_340871,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_409542_339051,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_343149_336308,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_60363_337109,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_140929_338838,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_427055_336539,clock,YES,YES,NO,False,True,YES,low,True,False
+clock_344614_333922,clock,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+clock_565989_333986,clock,NO,NO,NO,False,False,NO,none,False,False
+clock_304396_335489,clock,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+clock_154339_1664180,clock,NO,YES,NO,False,True,NO,none,False,False
+vase_521509_1669434,vase,NO,YES,NO,False,True,NO,none,False,False
+vase_111951_1668834,vase,NO,NO,NO,False,False,NO,none,False,False
+vase_370042_1156815,vase,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+vase_512194_1157219,vase,YES,YES,NO,False,True,YES,low,True,False
+vase_429530_1994424,vase,YES,YES,YES,True,True,UNSURE,high_context_hallucination,False,True
+vase_557916_1669044,vase,NO,NO,NO,False,False,NO,none,False,False
+vase_97585_1992818,vase,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+vase_421923_1153529,vase,YES,YES,NO,False,True,YES,low,True,False
+vase_161397_1154965,vase,YES,NO,YES,True,False,UNSURE,high_context_hallucination,False,True
+vase_473869_1151302,vase,NO,YES,NO,False,True,NO,none,False,False

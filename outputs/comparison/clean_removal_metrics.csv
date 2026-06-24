@@ -1,0 +1,73 @@
+run_name,model,subset,subset_n,metric,label,value,n
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,original_yes_rate,Original YES Rate,0.96,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,crop_yes_rate,Crop YES Rate,0.945,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,masked_yes_rate,Masked YES Rate,0.495,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,ghost_object_rate,Ghost Object Rate,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,context_persistence_index,Context Persistence Index,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.445,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.515,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,all_samples,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,original_yes_rate,Original YES Rate,0.96,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,crop_yes_rate,Crop YES Rate,0.945,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,masked_yes_rate,Masked YES Rate,0.495,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,ghost_object_rate,Ghost Object Rate,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,context_persistence_index,Context Persistence Index,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.445,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.515,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,clean_removal,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,original_yes_rate,Original YES Rate,0.96,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,crop_yes_rate,Crop YES Rate,0.945,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,masked_yes_rate,Masked YES Rate,0.495,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,ghost_object_rate,Ghost Object Rate,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,context_persistence_index,Context Persistence Index,0.515625,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.445,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.515,200
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,minor_or_clean,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,original_yes_rate,Original YES Rate,0.885,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,crop_yes_rate,Crop YES Rate,0.8,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,masked_yes_rate,Masked YES Rate,0.43,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,ghost_object_rate,Ghost Object Rate,0.4745762711864407,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,context_persistence_index,Context Persistence Index,0.48587570621468923,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.3,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.585,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,all_samples,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,original_yes_rate,Original YES Rate,0.885,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,crop_yes_rate,Crop YES Rate,0.8,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,masked_yes_rate,Masked YES Rate,0.43,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,ghost_object_rate,Ghost Object Rate,0.4745762711864407,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,context_persistence_index,Context Persistence Index,0.48587570621468923,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.3,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.585,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,clean_removal,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,original_yes_rate,Original YES Rate,0.885,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,crop_yes_rate,Crop YES Rate,0.8,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,masked_yes_rate,Masked YES Rate,0.43,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,ghost_object_rate,Ghost Object Rate,0.4745762711864407,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,context_persistence_index,Context Persistence Index,0.48587570621468923,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.3,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.585,200
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,minor_or_clean,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,original_yes_rate,Original YES Rate,0.43,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,crop_yes_rate,Crop YES Rate,0.605,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,masked_yes_rate,Masked YES Rate,0.145,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,ghost_object_rate,Ghost Object Rate,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,context_persistence_index,Context Persistence Index,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.245,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.185,200
+large200_bboxsolid_llava_7b,llava:7b,all_samples,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,original_yes_rate,Original YES Rate,0.43,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,crop_yes_rate,Crop YES Rate,0.605,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,masked_yes_rate,Masked YES Rate,0.145,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,ghost_object_rate,Ghost Object Rate,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,context_persistence_index,Context Persistence Index,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.245,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.185,200
+large200_bboxsolid_llava_7b,llava:7b,clean_removal,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,original_yes_rate,Original YES Rate,0.43,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,crop_yes_rate,Crop YES Rate,0.605,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,masked_yes_rate,Masked YES Rate,0.145,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,ghost_object_rate,Ghost Object Rate,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,context_persistence_index,Context Persistence Index,0.3372093023255814,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.245,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.185,200
+large200_bboxsolid_llava_7b,llava:7b,minor_or_clean,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0,200

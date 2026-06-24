@@ -1,0 +1,60 @@
+ollama:
+  host: "http://localhost:11434"
+  model: "llava:7b"
+  temperature: 0
+  num_ctx: 2048
+  timeout_seconds: 180
+
+dataset:
+  annotation_url: "http://images.cocodataset.org/annotations/annotations_trainval2017.zip"
+  annotation_file: "instances_val2017.json"
+  split: "val2017"
+  max_images_per_category: 10
+  min_object_area: 2000
+  max_object_area_fraction: 0.45
+  allow_crowd: false
+  image_max_side: 768
+  seed: 42
+  categories:
+    - "tennis racket"
+    - "baseball bat"
+    - "skateboard"
+    - "surfboard"
+    - "fork"
+    - "wine glass"
+    - "laptop"
+    - "keyboard"
+    - "handbag"
+    - "tie"
+    - "backpack"
+    - "umbrella"
+    - "bottle"
+    - "cup"
+    - "bowl"
+    - "chair"
+    - "cell phone"
+    - "book"
+    - "clock"
+    - "vase"
+
+counterfactual:
+  output_dir: "outputs/counterfactuals_large200_bbox_solid"
+  mask_shape: "bbox"
+  bbox_removal_margin_fraction: 0.12
+  mask_fill: "solid_local_mean"
+  mask_dilation_pixels: 0
+  crop_margin_fraction: 0.15
+  save_debug_overlay: true
+
+experiment:
+  views:
+    - "original"
+    - "crop"
+    - "masked"
+  strict_json: true
+  retries: 2
+  sleep_between_calls_seconds: 0.2
+
+evaluation:
+  bootstrap_iters: 1000
+  accept_rule: "strict"

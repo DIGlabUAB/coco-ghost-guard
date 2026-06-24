@@ -1,25 +1,25 @@
 run_name,model,samples,metric,label,value
-qwen2_5vl_7b,qwen2.5vl:7b,50,original_yes_rate,Original YES Rate,1.0
-qwen2_5vl_7b,qwen2.5vl:7b,50,crop_yes_rate,Crop YES Rate,0.96
-qwen2_5vl_7b,qwen2.5vl:7b,50,masked_yes_rate,Masked YES Rate,0.84
-qwen2_5vl_7b,qwen2.5vl:7b,50,ghost_object_rate,Ghost Object Rate,0.84
-qwen2_5vl_7b,qwen2.5vl:7b,50,context_persistence_index,Context Persistence Index,0.84
-qwen2_5vl_7b,qwen2.5vl:7b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.16
-qwen2_5vl_7b,qwen2.5vl:7b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.84
-qwen2_5vl_7b,qwen2.5vl:7b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
-qwen2_5vl_3b,qwen2.5vl:3b,50,original_yes_rate,Original YES Rate,0.92
-qwen2_5vl_3b,qwen2.5vl:3b,50,crop_yes_rate,Crop YES Rate,0.86
-qwen2_5vl_3b,qwen2.5vl:3b,50,masked_yes_rate,Masked YES Rate,0.74
-qwen2_5vl_3b,qwen2.5vl:3b,50,ghost_object_rate,Ghost Object Rate,0.782608695652174
-qwen2_5vl_3b,qwen2.5vl:3b,50,context_persistence_index,Context Persistence Index,0.8043478260869564
-qwen2_5vl_3b,qwen2.5vl:3b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.14
-qwen2_5vl_3b,qwen2.5vl:3b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.78
-qwen2_5vl_3b,qwen2.5vl:3b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
-llava_7b,llava:7b,50,original_yes_rate,Original YES Rate,0.52
-llava_7b,llava:7b,50,crop_yes_rate,Crop YES Rate,0.74
-llava_7b,llava:7b,50,masked_yes_rate,Masked YES Rate,0.32
-llava_7b,llava:7b,50,ghost_object_rate,Ghost Object Rate,0.6153846153846154
-llava_7b,llava:7b,50,context_persistence_index,Context Persistence Index,0.6153846153846154
-llava_7b,llava:7b,50,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.18
-llava_7b,llava:7b,50,guard_abstention_rate,GHOST-Guard Abstention Rate,0.34
-llava_7b,llava:7b,50,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,original_yes_rate,Original YES Rate,0.96
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,crop_yes_rate,Crop YES Rate,0.945
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,masked_yes_rate,Masked YES Rate,0.495
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,ghost_object_rate,Ghost Object Rate,0.515625
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,context_persistence_index,Context Persistence Index,0.515625
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.445
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.515
+large200_bboxsolid_qwen2_5vl_7b,qwen2.5vl:7b,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,original_yes_rate,Original YES Rate,0.885
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,crop_yes_rate,Crop YES Rate,0.8
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,masked_yes_rate,Masked YES Rate,0.43
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,ghost_object_rate,Ghost Object Rate,0.4745762711864407
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,context_persistence_index,Context Persistence Index,0.4858757062146892
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.3
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.585
+large200_bboxsolid_qwen2_5vl_3b,qwen2.5vl:3b,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
+large200_bboxsolid_llava_7b,llava:7b,200,original_yes_rate,Original YES Rate,0.43
+large200_bboxsolid_llava_7b,llava:7b,200,crop_yes_rate,Crop YES Rate,0.605
+large200_bboxsolid_llava_7b,llava:7b,200,masked_yes_rate,Masked YES Rate,0.145
+large200_bboxsolid_llava_7b,llava:7b,200,ghost_object_rate,Ghost Object Rate,0.3372093023255814
+large200_bboxsolid_llava_7b,llava:7b,200,context_persistence_index,Context Persistence Index,0.3372093023255814
+large200_bboxsolid_llava_7b,llava:7b,200,guard_acceptance_rate,GHOST-Guard Acceptance Rate,0.245
+large200_bboxsolid_llava_7b,llava:7b,200,guard_abstention_rate,GHOST-Guard Abstention Rate,0.185
+large200_bboxsolid_llava_7b,llava:7b,200,prevented_ghost_claim_rate,Prevented Ghost Claim Rate,1.0
