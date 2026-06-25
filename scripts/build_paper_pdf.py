@@ -33,9 +33,8 @@ ASSETS = ROOT / "docs" / "assets"
 
 
 AUTHORS = (
-    "Anusha Kanagala, M.S.; Dhiral Panjwani, M.S.; Stephanie M. Aguilera, B.S.; "
-    "Abhiraj Pudhota, M.S.; Kelly Powell, M.B.A.; Danish Murad, M.S.; "
-    "Rubin Pillay, M.D.; Leon Jololian, Ph.D.; and Sandeep Bodduluri, M.S., Ph.D."
+    "Dhiral Panjwani, M.S.; Anusha Kanagala, M.S.; Stephanie M. Aguilera, B.S.; "
+    "Abhiraj Pudhota, M.S.; Leon Jololian, Ph.D.; and Sandeep Bodduluri, M.S., Ph.D."
 )
 
 
@@ -290,9 +289,8 @@ def build() -> None:
         Paragraph(
             "@misc{cocoghost2026,<br/>"
             "&nbsp;&nbsp;title = {COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal},<br/>"
-            "&nbsp;&nbsp;author = {Kanagala, Anusha and Panjwani, Dhiral and Aguilera, Stephanie M. and "
-            "Pudhota, Abhiraj and Powell, Kelly and Murad, Danish and Pillay, Rubin and Jololian, Leon and "
-            "Bodduluri, Sandeep},<br/>"
+            "&nbsp;&nbsp;author = {Panjwani, Dhiral and Kanagala, Anusha and Aguilera, Stephanie M. and "
+            "Pudhota, Abhiraj and Jololian, Leon and Bodduluri, Sandeep},<br/>"
             "&nbsp;&nbsp;year = {2026},<br/>"
             "&nbsp;&nbsp;url = {https://github.com/DIGlabUAB/coco-ghost-guard}}",
             st["mono"],
