@@ -4,239 +4,240 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>COCO-Ghost + GHOST-Guard</title>
-    <meta name="description" content="An audited counterfactual benchmark for context-induced object persistence in local vision-language models." />
+    <meta name="description" content="A counterfactual benchmark for testing whether vision-language models keep reporting an object after it is removed." />
     <meta property="og:title" content="COCO-Ghost + GHOST-Guard" />
     <meta property="og:description" content="On 200 clean COCO occlusion counterfactuals, local VLMs still report removed objects in 33.7-51.6% of originally recognized cases." />
     <meta property="og:type" content="article" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <a href="#top" class="home">COCO-Ghost</a>
+      <a class="brand" href="#top">COCO-Ghost</a>
       <nav>
-        <a href="#abstract">Abstract</a>
-        <a href="#method">Method</a>
+        <a href="#idea">Idea</a>
+        <a href="#protocol">Protocol</a>
         <a href="#results">Results</a>
-        <a href="#evidence">Evidence</a>
-        <a href="#audit">Audit</a>
+        <a href="#figures">Figures</a>
+        <a href="#guard">Guard</a>
         <a href="#reproduce">Reproduce</a>
       </nav>
-      <a class="repo-link" href="https://github.com/DIGlabUAB/coco-ghost-guard">GitHub</a>
+      <a class="github" href="https://github.com/DIGlabUAB/coco-ghost-guard">GitHub</a>
     </header>
 
     <main id="top">
-      <section class="paper-hero">
-        <p class="venue-line">Project page · DIG Lab UAB · 2026</p>
+      <section class="title-block">
+        <p class="kicker">Academic project page · DIG Lab UAB · 2026</p>
         <h1>COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal</h1>
-        <p class="subtitle">
-          A controlled counterfactual benchmark and black-box abstention rule for measuring context-induced object persistence in local vision-language models.
-        </p>
-        <p class="authors">
-          Anusha Kanagala, M.S. · Dhiral Panjwani, M.S. · Stephanie M. Aguilera, B.S. · Abhiraj Pudhota, M.S. · Kelly Powell, M.B.A. · Danish Murad, M.S. · Rubin Pillay, M.D. · Leon Jololian, Ph.D. · Sandeep Bodduluri, M.S., Ph.D.
-        </p>
-        <div class="paper-actions" aria-label="Project links">
+        <p class="authors">Anusha Kanagala, M.S. · Dhiral Panjwani, M.S. · Stephanie M. Aguilera, B.S. · Abhiraj Pudhota, M.S. · Kelly Powell, M.B.A. · Danish Murad, M.S. · Rubin Pillay, M.D. · Leon Jololian, Ph.D. · Sandeep Bodduluri, M.S., Ph.D.</p>
+        <div class="link-row">
           <a href="https://github.com/DIGlabUAB/coco-ghost-guard">Code</a>
           <a href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Results</a>
-          <a href="#reproduce">Reproduction</a>
+          <a href="#reproduce">BibTeX</a>
         </div>
       </section>
 
-      <section id="abstract" class="abstract-grid">
-        <article class="abstract-card">
-          <span class="section-label">Abstract</span>
+      <section id="idea" class="paper-grid">
+        <article class="main-text">
+          <h2>The basic question</h2>
           <p>
-            Vision-language models often answer object-presence questions by combining visual evidence with strong scene priors. COCO-Ghost evaluates this behavior with object-level counterfactuals: an object must be recognized in the original image and in its crop, then the same object is occluded and queried again. If the model continues to answer <code>YES</code> after clean target removal, the claim is counted as a ghost.
+            Suppose a VLM says there is a <em>cup</em> in an image. Is it seeing the cup, or is it guessing from the surrounding scene? COCO-Ghost turns this into a counterfactual test: first verify that the model recognizes the object, then remove the object, and ask the same presence question again.
           </p>
           <p>
-            On 200 manually audited COCO validation instances, three local VLMs retain removed-object claims in 33.7-51.6% of originally recognized cases. The headline analysis uses padded bounding-box occlusion with solid local-mean fill, and reports results separately on cases labeled as clean removals.
+            If the model still answers <code>YES</code> after the object is cleanly occluded, the claim has survived removal of the visual evidence. We call this a <strong>ghost</strong>. The point is not that every ghost is a deployment failure. The point is that the model's object claim is no longer locally supported by the image.
           </p>
         </article>
-        <aside class="contribution-card">
-          <span class="section-label">Contributions</span>
-          <ol>
-            <li>A 200-sample audited counterfactual suite with artifact labels.</li>
-            <li>A black-box object-claim test requiring original, crop, and masked queries.</li>
-            <li>Clean-removal reporting across Qwen2.5-VL 7B, Qwen2.5-VL 3B, and LLaVA 7B.</li>
-            <li>GHOST-Guard: an abstention rule that rejects claims surviving target removal.</li>
-          </ol>
+        <aside class="takeaway">
+          <p class="label">One-line result</p>
+          <p class="large">33.7-51.6%</p>
+          <p>clean ghost rate among originally recognized cases across three local VLMs.</p>
         </aside>
       </section>
 
-      <section class="metric-strip" aria-label="Headline measurements">
-        <article>
-          <span>200</span>
-          <p>COCO validation instances</p>
-        </article>
-        <article>
-          <span>200/200</span>
-          <p>labeled clean-removal</p>
-        </article>
-        <article>
-          <span>51.6%</span>
-          <p>highest clean ghost rate</p>
-        </article>
-        <article>
-          <span>0.0%</span>
-          <p>detected ghost claims accepted</p>
-        </article>
-      </section>
-
-      <section id="method" class="method-section">
-        <div class="section-heading">
-          <span class="section-label">Method</span>
-          <h2>Counterfactual object-presence evaluation</h2>
-          <p>The experiment separates three questions that are often conflated: can the model identify the object, can it recognize local object evidence, and does the claim disappear when the evidence is removed?</p>
+      <section class="explainer">
+        <div class="section-head">
+          <p class="label">Conceptual illustration</p>
+          <h2>A model can be right for the wrong reason</h2>
+          <p>The animation below is intentionally small: it shows the hypothesis, not a new result. The same question is asked before and after removal. A reliable object claim should disappear when the object evidence disappears.</p>
         </div>
 
-        <figure class="pipeline-figure" aria-label="Animated COCO-Ghost method schematic">
-          <svg viewBox="0 0 980 440" role="img" aria-label="Original image, object crop, occluded image, VLM decisions, and GHOST-Guard abstention decision">
+        <figure class="concept-figure">
+          <svg viewBox="0 0 920 360" role="img" aria-label="Animated explanation of visual evidence, context prior, and the COCO-Ghost counterfactual test">
             <defs>
-              <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
-                <path d="M0,0 L9,4.5 L0,9 Z"></path>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M0,0 L8,4 L0,8 Z"></path>
               </marker>
             </defs>
-            <rect class="schematic-bg" x="12" y="12" width="956" height="416" rx="10"></rect>
-            <g class="panel original" transform="translate(54 70)">
-              <text x="0" y="-20">1. Original query</text>
-              <rect class="frame" width="170" height="125"></rect>
-              <rect class="scene" x="20" y="28" width="130" height="62"></rect>
-              <circle class="object-pulse" cx="122" cy="58" r="16"></circle>
-              <text class="yes" x="42" y="112">YES</text>
+
+            <g class="mini-image" transform="translate(40 56)">
+              <text x="0" y="-18">original image</text>
+              <rect class="canvas" width="190" height="132"></rect>
+              <rect class="counter" x="20" y="84" width="150" height="18"></rect>
+              <rect class="scene-line" x="32" y="42" width="52" height="18"></rect>
+              <circle class="object" cx="132" cy="66" r="18"></circle>
+              <text class="answer yes" x="52" y="122">VLM: YES</text>
             </g>
-            <g class="panel crop" transform="translate(54 250)">
-              <text x="0" y="-20">2. Crop gate</text>
-              <rect class="frame" width="170" height="105"></rect>
-              <rect class="scene tight" x="56" y="24" width="58" height="46"></rect>
-              <circle class="object-pulse offset" cx="85" cy="47" r="15"></circle>
-              <text class="yes" x="42" y="92">YES</text>
+
+            <g class="mini-image" transform="translate(40 224)">
+              <text x="0" y="-18">object removed</text>
+              <rect class="canvas" width="190" height="96"></rect>
+              <rect class="counter" x="20" y="58" width="150" height="16"></rect>
+              <rect class="scene-line" x="32" y="26" width="52" height="16"></rect>
+              <rect class="mask" x="110" y="30" width="48" height="32"></rect>
+              <text class="answer maybe" x="48" y="86">VLM: ?</text>
             </g>
-            <g class="panel masked" transform="translate(305 160)">
-              <text x="0" y="-20">3. Matched occlusion</text>
-              <rect class="frame" width="190" height="125"></rect>
-              <rect class="scene" x="24" y="34" width="142" height="52"></rect>
-              <rect class="mask-block" x="94" y="43" width="56" height="34"></rect>
-              <text class="neutral" x="42" y="112">same prompt</text>
+
+            <path class="wire top" d="M248 120 C308 120 322 116 360 112"></path>
+            <path class="wire bottom" d="M248 272 C310 260 326 224 360 190"></path>
+            <circle class="dot dot-a" r="5"></circle>
+            <circle class="dot dot-b" r="5"></circle>
+
+            <g class="model-box" transform="translate(378 102)">
+              <text x="0" y="-18">black-box VLM</text>
+              <rect width="154" height="112"></rect>
+              <text class="model-title" x="77" y="45" text-anchor="middle">same prompt</text>
+              <text class="small" x="77" y="76" text-anchor="middle">"is there a cup?"</text>
             </g>
-            <path class="signal s1" d="M235 132 C260 132 274 160 294 190"></path>
-            <path class="signal s2" d="M235 302 C260 302 278 270 296 230"></path>
-            <circle class="packet p1" r="6"></circle>
-            <circle class="packet p2" r="6"></circle>
-            <g class="vlm-node" transform="translate(565 145)">
-              <text x="0" y="-20">4. Black-box VLM</text>
-              <rect width="166" height="140"></rect>
-              <text class="node-title" x="83" y="48" text-anchor="middle">VLM</text>
-              <text class="node-small" x="83" y="78" text-anchor="middle">object present?</text>
-              <text class="node-small" x="83" y="106" text-anchor="middle">YES / NO</text>
+
+            <path class="wire out" d="M548 158 C596 158 612 158 650 158"></path>
+
+            <g class="decision" transform="translate(668 66)">
+              <text x="0" y="-18">decision rule</text>
+              <rect width="206" height="216"></rect>
+              <g class="rule ok" transform="translate(24 38)">
+                <rect width="158" height="52"></rect>
+                <text x="79" y="33" text-anchor="middle">removed -> NO</text>
+                <text class="tag accept" x="79" y="78" text-anchor="middle">accept claim</text>
+              </g>
+              <g class="rule ghost" transform="translate(24 124)">
+                <rect width="158" height="52"></rect>
+                <text x="79" y="33" text-anchor="middle">removed -> YES</text>
+                <text class="tag abstain" x="79" y="78" text-anchor="middle">abstain</text>
+              </g>
             </g>
-            <path class="signal s3" d="M504 222 C530 222 536 214 554 214"></path>
-            <g class="guard-node" transform="translate(795 132)">
-              <text x="0" y="-20">5. GHOST-Guard</text>
-              <rect width="126" height="166"></rect>
-              <text class="guard-accept" x="63" y="58" text-anchor="middle">ACCEPT</text>
-              <line x1="24" y1="82" x2="102" y2="82"></line>
-              <text class="guard-abstain" x="63" y="121" text-anchor="middle">ABSTAIN</text>
-            </g>
-            <path class="signal s4" d="M742 214 C760 214 770 214 786 214"></path>
-            <text class="schematic-note" x="54" y="396">A claim is trusted only when object recognition is positive before removal and negative after removal.</text>
           </svg>
-          <figcaption><b>Figure 1.</b> Animated schematic of the COCO-Ghost protocol. The moving packets indicate repeated queries to the same black-box VLM rather than a model-internal intervention.</figcaption>
+          <figcaption><strong>Figure 1.</strong> COCO-Ghost is a counterfactual object-presence test. GHOST-Guard accepts only when the model's object claim disappears after target removal.</figcaption>
         </figure>
       </section>
 
-      <section id="results" class="results-section">
-        <div class="section-heading">
-          <span class="section-label">Results</span>
-          <h2>Local VLMs continue to report removed objects</h2>
-          <p>Ghost rate is computed among original-YES cases. Guard accept reports the fraction of all evaluated cases that remain accepted after the counterfactual test.</p>
+      <section id="protocol" class="protocol">
+        <div class="section-head">
+          <p class="label">Experimental protocol</p>
+          <h2>Three queries per object claim</h2>
         </div>
-        <div class="result-layout">
-          <div class="table-card">
-            <table>
-              <thead>
-                <tr>
-                  <th>Model</th>
-                  <th>Original</th>
-                  <th>Crop</th>
-                  <th>Masked</th>
-                  <th>Ghost</th>
-                  <th>Guard accept</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>qwen2.5vl:7b</td><td>96.0%</td><td>94.5%</td><td>49.5%</td><td class="hot">51.6%</td><td>44.5%</td></tr>
-                <tr><td>qwen2.5vl:3b</td><td>88.5%</td><td>80.0%</td><td>43.0%</td><td class="hot">47.5%</td><td>30.0%</td></tr>
-                <tr><td>llava:7b</td><td>43.0%</td><td>60.5%</td><td>14.5%</td><td class="hot">33.7%</td><td>24.5%</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <figure class="chart-card">
-            <img src="assets/model_metric_comparison.png" alt="Bar chart comparing aggregate COCO-Ghost metrics across three local VLMs." />
-            <figcaption><b>Figure 2.</b> Aggregate model comparison on the same 200 clean counterfactuals.</figcaption>
-          </figure>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Original image</h3>
+            <p>Ask whether the target object is present in the full COCO image. This establishes that the model can make the object claim in context.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Object crop</h3>
+            <p>Ask the same question on the crop. This checks whether the claim is supported by local object evidence rather than only by scene context.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Occluded image</h3>
+            <p>Replace the target region with padded bounding-box solid local-mean fill, then ask again. A remaining <code>YES</code> is counted as a ghost.</p>
+          </article>
         </div>
       </section>
 
-      <section id="evidence" class="evidence-section">
-        <div class="section-heading">
-          <span class="section-label">Qualitative evidence</span>
-          <h2>Successes, failures, and category-level structure</h2>
-          <p>We show both favorable and unfavorable cases. A success flips to <code>NO</code> under occlusion; a failure remains <code>YES</code> and is treated as an abstention case.</p>
+      <section id="results" class="results">
+        <div class="section-head">
+          <p class="label">Scaled clean-removal run</p>
+          <h2>Results on 200 audited COCO counterfactuals</h2>
+          <p>All 200 examples in the headline run are labeled clean-removal. Ghost rate is computed among original-YES cases.</p>
         </div>
-        <figure class="wide-figure">
+        <div class="metrics">
+          <article><strong>200</strong><span>COCO validation instances</span></article>
+          <article><strong>200/200</strong><span>clean-removal labels</span></article>
+          <article><strong>51.6%</strong><span>highest clean ghost rate</span></article>
+          <article><strong>0.0%</strong><span>detected ghost claims accepted</span></article>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Original YES</th>
+                <th>Crop YES</th>
+                <th>Masked YES</th>
+                <th>Ghost rate</th>
+                <th>Guard accept</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>qwen2.5vl:7b</td><td>96.0%</td><td>94.5%</td><td>49.5%</td><td class="hot">51.6%</td><td>44.5%</td></tr>
+              <tr><td>qwen2.5vl:3b</td><td>88.5%</td><td>80.0%</td><td>43.0%</td><td class="hot">47.5%</td><td>30.0%</td></tr>
+              <tr><td>llava:7b</td><td>43.0%</td><td>60.5%</td><td>14.5%</td><td class="hot">33.7%</td><td>24.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="figures" class="figures">
+        <div class="section-head">
+          <p class="label">Empirical figures</p>
+          <h2>Both the aggregate pattern and the examples matter</h2>
+          <p>The page shows success cases and failure cases. This is important because a benchmark like this is only useful if readers can inspect what the intervention actually did.</p>
+        </div>
+        <figure class="wide">
           <img src="assets/success_failure_examples.png" alt="Success and failure examples showing original, crop, and bbox-occluded images." />
-          <figcaption><b>Figure 3.</b> Representative Qwen2.5-VL 7B success and failure cases from the clean occlusion run.</figcaption>
+          <figcaption><strong>Figure 2.</strong> Representative success and failure cases for Qwen2.5-VL 7B. A failure means the masked image still receives a <code>YES</code>.</figcaption>
         </figure>
-        <div class="figure-grid">
+        <div class="figure-pair">
+          <figure>
+            <img src="assets/model_metric_comparison.png" alt="Bar chart comparing aggregate COCO-Ghost metrics across three local VLMs." />
+            <figcaption><strong>Figure 3.</strong> Aggregate metrics across three local VLMs.</figcaption>
+          </figure>
           <figure>
             <img src="assets/category_model_heatmap.png" alt="Heatmap of ghost object rates by category and model." />
-            <figcaption><b>Figure 4.</b> Category-by-model ghost rates. Object classes with strong scene priors show larger persistence.</figcaption>
+            <figcaption><strong>Figure 4.</strong> Category-by-model ghost rates reveal object classes where context priors are especially strong.</figcaption>
           </figure>
+        </div>
+        <div class="figure-pair">
           <figure>
             <img src="assets/cross_model_persistence.png" alt="Cross-model persistence chart showing how many models ghost each image and categories with multi-model persistence." />
-            <figcaption><b>Figure 5.</b> Cross-model persistence. Some counterfactuals are ghosted by multiple architectures.</figcaption>
+            <figcaption><strong>Figure 5.</strong> Cross-model persistence identifies counterfactuals that fool multiple models.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/removal_method_focused_contact_sheet.png" alt="Comparison of blur, inpainting, patch, and bbox-solid removal methods." />
+            <figcaption><strong>Figure 6.</strong> Removal-method audit. The headline run uses bbox-solid occlusion to reduce object-shaped residual evidence.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section id="guard" class="guard-section">
-        <article>
-          <span class="section-label">Deployment interpretation</span>
-          <h2>GHOST-Guard is an abstention rule, not a model repair</h2>
+      <section id="guard" class="paper-grid">
+        <article class="main-text">
+          <h2>What GHOST-Guard is useful for</h2>
           <p>
-            The guard does not claim to fix the VLM or explain its internals. It is a black-box reliability layer for object-presence claims: accept claims that disappear after target removal, and abstain when the claim survives a clean counterfactual. In a deployed system, abstentions can be routed to an object detector, a stronger model, or human review.
+            GHOST-Guard is not a mechanistic explanation and it does not repair the VLM. It is a black-box abstention layer for object-presence claims. If the claim survives removal of the relevant visual evidence, a downstream application should not treat that claim as directly image-supported.
+          </p>
+          <p>
+            In practice, this can trigger escalation: ask a detector, query a stronger model, request another view, or send the case to a human reviewer. The contribution is a simple reliability check that can be run without access to model weights or activations.
           </p>
         </article>
-        <aside class="guard-stats">
-          <div><span>51.4%</span><p>crop-gate ghost accepts without the removal check</p></div>
-          <div><span>0.0%</span><p>detected ghost claims accepted by GHOST-Guard</p></div>
-          <div><span>51.5%</span><p>abstention rate for Qwen2.5-VL 7B</p></div>
+        <aside class="takeaway small-takeaway">
+          <p class="label">Guard behavior</p>
+          <p><strong>0.0%</strong> of detected ghost claims were accepted by GHOST-Guard in the reported Qwen2.5-VL 7B analysis.</p>
+          <p><strong>51.5%</strong> abstention rate reflects the cost of rejecting unsupported claims.</p>
         </aside>
       </section>
 
-      <section id="audit" class="audit-section">
-        <div>
-          <span class="section-label">Artifact audit</span>
-          <h2>The intervention matters</h2>
-          <p>
-            Early blur masks were informative but visually confounded: blurred segmentation regions can preserve target shape. The headline result therefore uses padded bounding-box occlusion with solid local-mean fill. This choice is less naturalistic, but it makes the main claim harder to dismiss as residual silhouette leakage.
-          </p>
-          <p class="limitation">
-            Scope: COCO-Ghost is a counterfactual stress test for object-presence claims. It does not prove that every masked-image <code>YES</code> is a human-level hallucination, and it does not replace broader VLM robustness evaluation.
-          </p>
-        </div>
-        <figure>
-          <img src="assets/removal_method_focused_contact_sheet.png" alt="Comparison of blur, inpainting, patch, and bbox-solid removal methods." />
-          <figcaption><b>Figure 6.</b> Removal-method audit. Bbox-solid occlusion reduces object-shaped residual evidence and is used for the main clean-removal analysis.</figcaption>
-        </figure>
+      <section class="limitations">
+        <h2>Scope and limitations</h2>
+        <p>
+          COCO-Ghost is a counterfactual stress test for object-presence claims. It does not claim that every masked-image <code>YES</code> is a human-level hallucination, and it does not evaluate all forms of VLM reasoning. Its strength is narrowness: it asks one question cleanly, with artifact labels and results reported separately for clean-removal cases.
+        </p>
       </section>
 
-      <section id="reproduce" class="reproduce-section">
-        <span class="section-label">Reproducibility</span>
-        <h2>One script regenerates the scaled suite</h2>
-        <pre class="term"><span class="bar"><i></i><i></i><i></i><span>bash</span></span><code>python3 -m venv .venv
+      <section id="reproduce" class="reproduce">
+        <h2>Reproduce</h2>
+        <pre class="term"><code>python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
@@ -256,7 +257,7 @@ bash scripts/run_large_200_model_suite.sh</code></pre>
 
     <footer>
       <span>COCO-Ghost + GHOST-Guard · DIG Lab UAB · 2026</span>
-      <span><a href="https://github.com/DIGlabUAB/coco-ghost-guard">Code</a> · <a href="https://github.com/DIGlabUAB/coco-ghost-guard/blob/main/RESULTS.md">Results</a> · <a href="#top">Back to top</a></span>
+      <span><a href="https://github.com/DIGlabUAB/coco-ghost-guard">Code</a> · <a href="#top">Back to top</a></span>
     </footer>
   </body>
 </html>
