@@ -239,9 +239,16 @@ figure figcaption {
 }
 figcaption strong { color: var(--ink); }
 
+.svg-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 650;
+  fill: var(--ink);
+}
 .mini-image > text,
 .model-box > text:first-child,
-.decision > text:first-child {
+.rule > text:first-child,
+.rate-card > text:first-child {
   font-family: var(--mono);
   font-size: 12px;
   font-weight: 700;
@@ -251,7 +258,7 @@ figcaption strong { color: var(--ink); }
 }
 .canvas,
 .model-box rect,
-.decision > rect {
+.rate-card rect {
   fill: #fff;
   stroke: var(--line-dark);
   stroke-width: 1.2;
@@ -269,6 +276,18 @@ figcaption strong { color: var(--ink); }
   opacity: 0.9;
   transform-origin: center;
   animation: objectPulse 3.4s ease-in-out infinite;
+}
+.bbox {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 1.4;
+  stroke-dasharray: 5 4;
+  animation: flow 3s linear infinite;
+}
+.crop-window {
+  fill: #fff6f4;
+  stroke: var(--red);
+  stroke-width: 1.2;
 }
 .mask {
   fill: var(--gold);
@@ -327,6 +346,13 @@ marker path { fill: var(--blue); }
 .tag {
   font-size: 13px;
 }
+.masked-answer {
+  fill: var(--red);
+  animation: maskedAnswer 4s ease-in-out infinite;
+}
+.masked-line {
+  animation: maskedLine 4s ease-in-out infinite;
+}
 .accept {
   fill: var(--green);
   animation: acceptPulse 4s ease-in-out infinite;
@@ -334,6 +360,12 @@ marker path { fill: var(--blue); }
 .abstain {
   fill: var(--red);
   animation: abstainPulse 4s ease-in-out infinite;
+}
+.rate {
+  fill: var(--red);
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 700;
 }
 
 @keyframes flow { to { stroke-dashoffset: -64; } }
@@ -346,14 +378,22 @@ marker path { fill: var(--blue); }
   50% { opacity: 0.58; }
 }
 @keyframes dotA {
-  0% { transform: translate(248px,120px); opacity: 0; }
+  0% { transform: translate(210px,130px); opacity: 0; }
   18%, 44% { opacity: 1; }
-  58%, 100% { transform: translate(360px,112px); opacity: 0; }
+  58%, 100% { transform: translate(232px,130px); opacity: 0; }
 }
 @keyframes dotB {
-  0%, 20% { transform: translate(248px,272px); opacity: 0; }
+  0%, 20% { transform: translate(408px,130px); opacity: 0; }
   36%, 66% { opacity: 1; }
-  82%, 100% { transform: translate(360px,190px); opacity: 0; }
+  82%, 100% { transform: translate(430px,130px); opacity: 0; }
+}
+@keyframes maskedAnswer {
+  0%, 45%, 100% { fill: var(--green); opacity: 1; }
+  58%, 80% { fill: var(--red); opacity: 1; }
+}
+@keyframes maskedLine {
+  0%, 45%, 100% { fill: var(--green); }
+  58%, 80% { fill: var(--red); }
 }
 @keyframes acceptPulse {
   0%, 48%, 100% { opacity: 1; }
