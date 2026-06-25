@@ -206,8 +206,8 @@
           <p>The page shows success cases and failure cases. This is important because a benchmark like this is only useful if readers can inspect what the intervention actually did.</p>
         </div>
         <figure class="wide">
-          <img src="assets/success_failure_examples.png" alt="Success and failure examples showing original, crop, and bbox-occluded images." />
-          <figcaption><strong>Figure 2.</strong> Representative success and failure cases for Qwen2.5-VL 7B. A failure means the masked image still receives a <code>YES</code>.</figcaption>
+          <img src="assets/zoomed_evidence_examples.png" alt="Zoomed success and failure examples showing original, crop, and bbox-occluded images." />
+          <figcaption><strong>Figure 2.</strong> Zoomed success and failure cases for Qwen2.5-VL 7B. The failure remains <code>YES</code> after bbox-solid removal and is abstained.</figcaption>
         </figure>
         <div class="figure-pair">
           <figure>
@@ -225,8 +225,18 @@
             <figcaption><strong>Figure 5.</strong> Cross-model persistence identifies counterfactuals that fool multiple models.</figcaption>
           </figure>
           <figure>
-            <img src="assets/removal_method_focused_contact_sheet.png" alt="Comparison of blur, inpainting, patch, and bbox-solid removal methods." />
-            <figcaption><strong>Figure 6.</strong> Removal-method audit. The headline run uses bbox-solid occlusion to reduce object-shaped residual evidence.</figcaption>
+            <img src="assets/zoomed_removal_audit.png" alt="Zoomed comparison of blur, bbox-solid, and bbox-inpaint removal methods." />
+            <figcaption><strong>Figure 6.</strong> Zoomed removal-method audit. Blur can preserve object-shaped residual evidence; bbox-solid is the conservative headline intervention.</figcaption>
+          </figure>
+        </div>
+        <figure class="wide">
+          <img src="assets/success_failure_examples.png" alt="Full success and failure contact sheet showing original, crop, and bbox-occluded images." />
+          <figcaption><strong>Figure 7.</strong> Full contact sheet for auditability: successes and failures are both shown, not cherry-picked away.</figcaption>
+        </figure>
+        <div class="figure-pair">
+          <figure>
+            <img src="assets/removal_method_focused_contact_sheet.png" alt="Full comparison of blur, inpainting, patch, and bbox-solid removal methods." />
+            <figcaption><strong>Figure 8.</strong> Full removal-method contact sheet used to motivate the bbox-solid headline analysis.</figcaption>
           </figure>
         </div>
       </section>

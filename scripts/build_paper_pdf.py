@@ -124,18 +124,18 @@ def image_flowable(filename: str, width: float, caption: str, st: dict, max_heig
 
 def results_table(st: dict) -> Table:
     data = [
-        ["Model", "Original YES", "Crop YES", "Masked YES", "Ghost rate", "Guard accept"],
-        ["qwen2.5vl:7b", "96.0%", "94.5%", "49.5%", "51.6%", "44.5%"],
-        ["qwen2.5vl:3b", "88.5%", "80.0%", "43.0%", "47.5%", "30.0%"],
-        ["llava:7b", "43.0%", "60.5%", "14.5%", "33.7%", "24.5%"],
+        ["Model", "Orig YES", "Crop YES", "Masked YES", "Ghost", "Guard accept", "Guard abstain", "Accepted ghosts"],
+        ["qwen2.5vl:7b", "96.0%", "94.5%", "49.5%", "51.6%", "44.5%", "51.5%", "0.0%"],
+        ["qwen2.5vl:3b", "88.5%", "80.0%", "43.0%", "47.5%", "30.0%", "58.5%", "0.0%"],
+        ["llava:7b", "43.0%", "60.5%", "14.5%", "33.7%", "24.5%", "18.5%", "0.0%"],
     ]
-    table = Table(data, colWidths=[1.18 * inch, 0.82 * inch, 0.72 * inch, 0.78 * inch, 0.78 * inch, 0.86 * inch])
+    table = Table(data, colWidths=[1.05 * inch, 0.62 * inch, 0.62 * inch, 0.68 * inch, 0.58 * inch, 0.76 * inch, 0.78 * inch, 0.82 * inch])
     table.setStyle(
         TableStyle(
             [
                 ("FONTNAME", (0, 0), (-1, 0), "Times-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8.5),
-                ("LEADING", (0, 0), (-1, -1), 10),
+                ("FONTSIZE", (0, 0), (-1, -1), 7.2),
+                ("LEADING", (0, 0), (-1, -1), 8.8),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#e9f2ef")),
                 ("TEXTCOLOR", (0, 0), (-1, 0), colors.HexColor("#173f3a")),
                 ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#c9c5ba")),
@@ -171,12 +171,10 @@ def build() -> None:
         title="COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal",
         author=AUTHORS,
     )
-    story = []
-    story.append(Paragraph("COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal", st["title"]))
-    story.append(Paragraph(AUTHORS, st["authors"]))
-
-    story.append(Paragraph("Abstract", st["h1"]))
-    story.append(
+    story = [
+        Paragraph("COCO-Ghost: Auditing Whether VLM Object Claims Survive Object Removal", st["title"]),
+        Paragraph(AUTHORS, st["authors"]),
+        Paragraph("Abstract", st["h1"]),
         p(
             "Vision-language models can report objects that are contextually plausible but visually absent. "
             "COCO-Ghost evaluates this behavior with object-level counterfactuals: an object must be recognized "
@@ -186,57 +184,68 @@ def build() -> None:
             "originally recognized cases. GHOST-Guard is a training-free, black-box abstention rule that accepts "
             "object claims only when they are supported before removal and disappear after removal.",
             st["body"],
-        )
-    )
+        ),
+    ]
 
-    story.append(Paragraph("Core idea", st["h1"]))
-    story.append(
-        p(
-            "The diagnostic asks a deliberately narrow question: if a model says an object is visible, does that "
-            "claim depend on local visual evidence or only on scene context? This is useful because context priors "
-            "can be semantically reasonable while still being visually unsupported.",
-            st["body"],
-        )
-    )
+    sections = [
+        (
+            "1. Introduction",
+            [
+                "Vision-language models (VLMs) are increasingly used as general visual interfaces: they answer questions, describe scenes, and make object-presence claims from images. A central reliability problem is that these claims can be supported by a mixture of visual evidence and learned scene priors. A model may say that a cup is visible because it detects a cup, but it may also say so because the surrounding sink, table, or countertop makes a cup plausible.",
+                "COCO-Ghost studies this failure mode with a narrow counterfactual question: does an object claim survive removal of the object evidence? For each target object, we query the original image, a crop around the target object, and a masked counterfactual image in which the target region is occluded. If the model answers YES after the target has been removed, the object claim is no longer locally supported by the image.",
+                "This project makes three contributions: a lightweight object-removal benchmark using audited COCO counterfactuals, a 200-sample clean-removal experiment across three local VLMs, and GHOST-Guard, a black-box abstention rule that rejects object claims that survive target removal.",
+            ],
+        ),
+        (
+            "2. Related Work",
+            [
+                "Object hallucination has a long history in image captioning. Rohrbach et al. introduced the CHAIR metric to measure hallucinated object mentions in generated captions and showed that strong captioning metrics do not necessarily imply faithful object grounding [1]. Large VLMs renewed this concern because instruction-following models can produce fluent visual answers while still mentioning objects inconsistent with the image.",
+                "Several benchmarks directly probe object hallucination in VLMs. POPE formulates polling-based object-presence questions to stabilize hallucination evaluation [2]. AMBER extends hallucination evaluation across existence, attribute, and relation dimensions without requiring an LLM judge [3]. COCO-Ghost is complementary: it starts from a known object instance and asks whether a model's own object-presence claim survives a controlled removal of the target evidence.",
+                "Mitigation work includes decoding-time approaches such as Visual Contrastive Decoding (VCD), which contrasts predictions under original and distorted images [4], and OPERA, which penalizes attention patterns associated with over-trusting summary tokens [5]. Post-hoc systems such as Woodpecker decompose generated claims and validate them through additional visual questions [6]. GHOST-Guard is closest in spirit to black-box post-hoc validation, but it focuses on one interpretable claim type: object presence under explicit target removal.",
+                "COCO-Ghost uses COCO because it provides natural images with object-level instance annotations [7]. The local model suite includes Qwen2.5-VL models [8] and LLaVA-style VLMs [9]. More broadly, segmentation and localization tools such as SAM [10] motivate counterfactual visual editing as a practical way to stress-test whether visual claims remain grounded.",
+            ],
+        ),
+        (
+            "3. Methods",
+            [
+                "For each selected COCO validation instance, the pipeline constructs three views. The original view is the full image. The crop view isolates the target object region. The masked view preserves the surrounding scene while replacing a padded target-object bounding box with a solid local-mean color. The headline experiment uses bbox-solid occlusion rather than blur because blur can preserve object-shaped residuals.",
+                "Each view is queried with the same object-presence prompt: whether the target object is visible in the image. The model is constrained to answer YES, NO, or UNSURE, with a short evidence phrase. A ghost is counted when the model answers YES on the original image and also YES on the masked image. GHOST-Guard accepts only the pattern original=YES, crop=YES, masked=NO. If the masked answer remains YES, the guard abstains.",
+            ],
+        ),
+    ]
+    for heading, paragraphs in sections:
+        story.append(Paragraph(heading, st["h1"]))
+        for text in paragraphs:
+            story.append(p(text, st["body"]))
+
     story.append(
         bullet_list(
             [
-                "Original query: ask whether the target object is present in the full COCO image.",
-                "Crop gate: ask the same question on a crop around the target object.",
-                "Masked query: replace the target region with padded bounding-box solid local-mean fill and ask again.",
-                "Ghost criterion: original YES and masked YES after target removal.",
-                "GHOST-Guard accept criterion: original YES, crop YES, and masked NO.",
+                "Dataset: 200 COCO validation instances spanning 20 object categories.",
+                "Models: qwen2.5vl:7b, qwen2.5vl:3b, and llava:7b through local Ollama inference.",
+                "Artifact labels: all 200 headline counterfactuals are labeled clean-removal.",
+                "Primary metric: clean Ghost Object Rate among original-YES cases.",
+                "Safety metric: detected ghost claims accepted by GHOST-Guard.",
             ],
             st,
         )
     )
 
-    story.append(Paragraph("Scaled clean-removal results", st["h1"]))
+    story.append(Paragraph("4. Results", st["h1"]))
     story.append(
         p(
-            "The headline run uses 200 COCO validation instances across 20 object categories and three local "
-            "Ollama VLMs. All 200 counterfactuals are labeled clean-removal. The solid bbox intervention is less "
-            "naturalistic than blur, but it avoids object-shaped blur that could leak the target silhouette.",
+            "Table 1 summarizes the scaled clean-removal run. Qwen2.5-VL 7B recognizes the target in 96.0% of original images and 94.5% of crops, but still answers YES on 49.5% of masked images. Among original-YES cases, this corresponds to a 51.6% clean ghost rate. Qwen2.5-VL 3B shows a similar pattern at 47.5%. LLaVA 7B has lower original recognition, so its 33.7% ghost rate should be interpreted with that caveat.",
             st["body"],
         )
     )
     story.append(results_table(st))
-    story.append(Spacer(1, 8))
-    story.append(
-        p(
-            "Ghost rate is computed among original-YES cases. Guard accept is the fraction of all evaluated cases "
-            "accepted after the counterfactual test. Detected ghost claims accepted by GHOST-Guard were 0.0% in "
-            "all three model runs.",
-            st["small"],
-        )
-    )
-
-    story.append(Paragraph("Qualitative evidence and artifact audit", st["h1"]))
+    story.append(Spacer(1, 6))
+    story.append(p("Table 1. Scaled clean-removal results. Ghost rate is computed among original-YES cases.", st["caption"]))
     story.append(
         image_flowable(
-            "success_failure_examples.png",
+            "zoomed_evidence_examples.png",
             6.0 * inch,
-            "Figure 1. Representative success and failure cases. A failure means the masked view still receives YES.",
+            "Figure 1. Zoomed evidence examples. The success case flips to NO after bbox-solid removal; the failure case remains YES and is therefore abstained.",
             st,
         )
     )
@@ -257,32 +266,71 @@ def build() -> None:
             st,
         )
     )
+    story.append(PageBreak())
     story.append(
         image_flowable(
-            "removal_method_focused_contact_sheet.png",
-            5.6 * inch,
-            "Figure 4. Removal-method audit. Bbox-solid occlusion reduces object-shaped residual evidence.",
+            "success_failure_examples.png",
+            6.0 * inch,
+            "Figure 4. Full qualitative contact sheet with success and failure examples from the clean occlusion run.",
+            st,
+        )
+    )
+    story.append(
+        image_flowable(
+            "zoomed_removal_audit.png",
+            5.8 * inch,
+            "Figure 5. Zoomed removal-method audit. Blur can preserve object-shaped residual evidence; bbox-solid occlusion is less naturalistic but easier to audit.",
             st,
         )
     )
 
-    story.append(Paragraph("Interpretation and limitations", st["h1"]))
+    story.append(Paragraph("5. Discussion", st["h1"]))
     story.append(
         p(
-            "GHOST-Guard is not a mechanistic explanation and does not repair the underlying model. It is a black-box "
-            "reliability wrapper for object-presence claims. In deployed settings, abstentions can be routed to a "
-            "detector, a stronger model, another view, or human review.",
+            "The central empirical result is not simply that VLMs hallucinate objects. It is that an object-presence claim can remain stable after the corresponding object evidence has been removed. This makes the failure more specific than generic caption hallucination: the same object claim is tested before and after a targeted counterfactual intervention.",
             st["body"],
         )
     )
     story.append(
         p(
-            "COCO-Ghost is a counterfactual stress test for one interpretable claim type: object presence. It does "
-            "not prove that every masked-image YES is a human-level hallucination, and it does not replace broader "
-            "VLM robustness evaluation.",
+            "GHOST-Guard trades coverage for reliability. It accepted fewer claims than an original-only or crop-only gate, but it accepted 0.0% of detected ghost claims in all three model runs. This is useful in applications where an unsupported object claim should trigger abstention, a detector, a stronger model, another camera view, or human review. It should not be interpreted as repairing the VLM or as explaining model internals.",
             st["body"],
         )
     )
+
+    story.append(Paragraph("6. Limitations", st["h1"]))
+    story.append(
+        p(
+            "COCO-Ghost is intentionally narrow. It evaluates object-presence claims, not attributes, relations, counting, spatial reasoning, or open-ended caption faithfulness. The bbox-solid intervention is conservative with respect to silhouette leakage but can introduce an unnatural patch. The 200-sample run is large enough to reveal a clear failure mode, but larger datasets, additional VLM families, human artifact audits, and self-localized masks would strengthen future versions.",
+            st["body"],
+        )
+    )
+
+    story.append(Paragraph("7. Conclusion", st["h1"]))
+    story.append(
+        p(
+            "COCO-Ghost provides a simple counterfactual test for whether VLM object claims survive object removal. On 200 audited clean-removal COCO examples, local VLMs retained removed-object claims at substantial rates. GHOST-Guard offers a practical black-box abstention rule: trust object claims only when they are locally supported and disappear after target removal.",
+            st["body"],
+        )
+    )
+
+    story.append(Paragraph("References", st["h1"]))
+    refs = [
+        "A. Rohrbach, L. A. Hendricks, K. Burns, T. Darrell, and K. Saenko. Object Hallucination in Image Captioning. EMNLP, 2018.",
+        "Y. Li, Y. Du, K. Zhou, J. Wang, W. X. Zhao, and J.-R. Wen. Evaluating Object Hallucination in Large Vision-Language Models. arXiv:2305.10355, 2023.",
+        "J. Wang et al. AMBER: An LLM-free Multi-dimensional Benchmark for MLLMs Hallucination Evaluation. arXiv:2311.07397, 2023.",
+        "S. Leng et al. Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding. arXiv:2311.16922, 2023.",
+        "Q. Huang et al. OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation. arXiv:2311.17911, 2023.",
+        "S. Yin et al. Woodpecker: Hallucination Correction for Multimodal Large Language Models. arXiv:2310.16045, 2023.",
+        "T.-Y. Lin et al. Microsoft COCO: Common Objects in Context. ECCV, 2014.",
+        "S. Bai et al. Qwen2.5-VL Technical Report. arXiv:2502.13923, 2025.",
+        "H. Liu, C. Li, Q. Wu, and Y. J. Lee. Visual Instruction Tuning. NeurIPS, 2023.",
+        "A. Kirillov et al. Segment Anything. ICCV, 2023.",
+        "J. Li, D. Li, S. Savarese, and S. Hoi. BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. ICML, 2023.",
+        "D. Dai et al. InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning. NeurIPS, 2023.",
+    ]
+    for i, ref in enumerate(refs, 1):
+        story.append(Paragraph(f"[{i}] {ref}", st["small"]))
 
     story.append(Paragraph("Citation", st["h1"]))
     story.append(

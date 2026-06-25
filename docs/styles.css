@@ -501,9 +501,15 @@ figure img {
   max-height: 760px;
   object-fit: contain;
 }
+.wide img[src*="zoomed"] {
+  max-height: none;
+}
 .figure-pair {
   grid-template-columns: 1fr 1fr;
   margin-top: 14px;
+}
+.figure-pair figure:only-child {
+  grid-column: 1 / -1;
 }
 .figure-pair figure,
 .wide {
